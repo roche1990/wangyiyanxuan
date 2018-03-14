@@ -7,6 +7,7 @@
 //
 
 #import "YXGoodsSpecViewController.h"
+#import "YXGoodsViewModel.h"
 
 #import "YXGoodsCellViewModel.h"
 
@@ -83,8 +84,7 @@ static const float scrollDistance = 50;
     _tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
     _tableView.backgroundColor = [UIColor whiteColor];
     _tableView.showsVerticalScrollIndicator = NO;
-    [self.view addSubview:_tableView];
-    [self.view bringSubviewToFront:_activityIndicatorView];
+    [self.view insertSubview:_tableView belowSubview:_activityIndicatorView];
     //tag 10086 轮播图
     //tag 10087 规格选取
 }
@@ -103,9 +103,17 @@ static const float scrollDistance = 50;
 }
 
 -(void)loadData{
+    LSWeakSelf(self);
+    YXGoodsViewModel *goodsViewModel = [[YXGoodsViewModel alloc] init];
+    [goodsViewModel loadDataWithId:_goods_id finishBlock:^(NSArray *dataList) {
+        weakself.dataSource = [dataList mutableCopy];
+        
+        [weakself.tableView reloadData];
+        [weakself.activityIndicatorView stopAnimating];
+        weakself.loadDataFinishBlock();
+    }];
     
-    [self.tableView reloadData];
-    [self.activityIndicatorView stopAnimating];
+    
 }
 
 -(YXGoodsSpecBaseCell *)configCellWithTableView:(UITableView *)tableView indexPath:(NSIndexPath *)indexPath

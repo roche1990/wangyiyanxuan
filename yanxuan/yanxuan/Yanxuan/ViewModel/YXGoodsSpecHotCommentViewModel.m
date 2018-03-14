@@ -28,6 +28,10 @@
     
     model.goodsSpecHotCommentDataModel.starVO = arc4random() % 6;
     
+    if (model.goodsSpecHotCommentDataModel.starVO < 3) {
+        model.goodsSpecHotCommentDataModel.starVO = 3;
+    }
+    
     __block NSString *skuString = @"";
     [model.goodsSpecHotCommentDataModel.skuInfo enumerateObjectsUsingBlock:^(NSString * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
         

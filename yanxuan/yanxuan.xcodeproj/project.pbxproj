@@ -711,13 +711,13 @@
 			isa = PBXGroup;
 			children = (
 				C05A4A27204FBCE200DC1268 /* YXGoodsViewModel.h */,
+				C05A4A28204FBCE200DC1268 /* YXGoodsViewModel.m */,
 				C008CC3020469E2F00DDA4C0 /* YXGoodsNavigationViewModel.h */,
 				C008CC3120469E2F00DDA4C0 /* YXGoodsNavigationViewModel.m */,
 				C008CCB020478A6B00DDA4C0 /* YXGoodsCellViewModel.h */,
 				C008CCB120478A6B00DDA4C0 /* YXGoodsCellViewModel.m */,
 				C008CD0020480FF000DDA4C0 /* YXGoodsSpecBaseViewModel.h */,
 				C008CD0120480FF000DDA4C0 /* YXGoodsSpecBaseViewModel.m */,
-				C05A4A28204FBCE200DC1268 /* YXGoodsViewModel.m */,
 				C008CC332046BA0600DDA4C0 /* YXGoodsSpecBannerViewModel.h */,
 				C008CC342046BA0600DDA4C0 /* YXGoodsSpecBannerViewModel.m */,
 				C008CCB320478BCB00DDA4C0 /* YXGoodsSpecFeatureViewModel.h */,
@@ -915,7 +915,8 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-yanxuan/Pods-yanxuan-frameworks.sh\"\n";
+			shellScript = "
+";
 			showEnvVarsInLog = 0;
 		};
 		15A2555BF7B8F2EA42108853 /* [CP] Embed Pods Frameworks */ = {
@@ -945,7 +946,8 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-yanxuan/Pods-yanxuan-resources.sh\"\n";
+			shellScript = "
+";
 			showEnvVarsInLog = 0;
 		};
 		4BB795168096512F4DC89D54 /* [CP] Copy Pods Resources */ = {
