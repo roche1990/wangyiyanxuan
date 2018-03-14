@@ -1,0 +1,1439 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		23F33EBF4BCB0A9A1AB0795E /* libPods-yanxuan.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E50F7C57EA27797946C90008 /* libPods-yanxuan.a */; };
+		245B9700204836C100D8D949 /* NSObject+Common.m in Sources */ = {isa = PBXBuildFile; fileRef = 245B96FF204836C100D8D949 /* NSObject+Common.m */; };
+		245B970320483C7B00D8D949 /* YXGoodsSpecDescriptRightView.m in Sources */ = {isa = PBXBuildFile; fileRef = 245B970220483C7B00D8D949 /* YXGoodsSpecDescriptRightView.m */; };
+		245B970A204AD16B00D8D949 /* YXGoodsSpecCommentStarLevelView.m in Sources */ = {isa = PBXBuildFile; fileRef = 245B9709204AD16B00D8D949 /* YXGoodsSpecCommentStarLevelView.m */; };
+		245B970D204AD18C00D8D949 /* YXGoodsSpecCommentImagesView.m in Sources */ = {isa = PBXBuildFile; fileRef = 245B970C204AD18C00D8D949 /* YXGoodsSpecCommentImagesView.m */; };
+		245B9710204B075D00D8D949 /* NSDate+Convert.m in Sources */ = {isa = PBXBuildFile; fileRef = 245B970F204B075D00D8D949 /* NSDate+Convert.m */; };
+		245B9716204B0EAC00D8D949 /* UILabel+Common.m in Sources */ = {isa = PBXBuildFile; fileRef = 245B9715204B0EAC00D8D949 /* UILabel+Common.m */; };
+		245B9719204BF13900D8D949 /* YXGoodsSpecHotCommentImageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 245B9718204BF13900D8D949 /* YXGoodsSpecHotCommentImageCell.m */; };
+		245B9722204C101600D8D949 /* YXGoodsSpecRecommedationItemTagModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 245B9721204C101600D8D949 /* YXGoodsSpecRecommedationItemTagModel.m */; };
+		245B972A204C2A0000D8D949 /* HTSegmentsCellView.m in Sources */ = {isa = PBXBuildFile; fileRef = 245B9725204C2A0000D8D949 /* HTSegmentsCellView.m */; };
+		245B972B204C2A0000D8D949 /* HTSegmentsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 245B9727204C2A0000D8D949 /* HTSegmentsView.m */; };
+		245B972C204C2A0000D8D949 /* HTSegmentsViewAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 245B9729204C2A0000D8D949 /* HTSegmentsViewAnimator.m */; };
+		245B972F204C2B2100D8D949 /* ColorUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 245B972D204C2B2100D8D949 /* ColorUtils.m */; };
+		245B9732204C31A600D8D949 /* YXGoodsSpecRecommedationSegmentsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 245B9731204C31A600D8D949 /* YXGoodsSpecRecommedationSegmentsView.m */; };
+		245B9735204C3CA600D8D949 /* YXGoodsSpecRecommedationGoodsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 245B9734204C3CA600D8D949 /* YXGoodsSpecRecommedationGoodsView.m */; };
+		245B9738204C41DA00D8D949 /* YXGoodsSpecRecommendationGoodsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 245B9737204C41DA00D8D949 /* YXGoodsSpecRecommendationGoodsCell.m */; };
+		245B973B204C52BA00D8D949 /* YXGoodsSpecRecommedationGoodsStatusView.m in Sources */ = {isa = PBXBuildFile; fileRef = 245B973A204C52BA00D8D949 /* YXGoodsSpecRecommedationGoodsStatusView.m */; };
+		ABD13E86A7542FB4C96D0A95 /* libPods-yanxuanTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C638F2C02A2886D1F0493D9F /* libPods-yanxuanTests.a */; };
+		C008CB2220452E0D00DDA4C0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C008CB2120452E0D00DDA4C0 /* AppDelegate.m */; };
+		C008CB2820452E0D00DDA4C0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C008CB2620452E0D00DDA4C0 /* Main.storyboard */; };
+		C008CB2A20452E0D00DDA4C0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C008CB2920452E0D00DDA4C0 /* Assets.xcassets */; };
+		C008CB2D20452E0D00DDA4C0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C008CB2B20452E0D00DDA4C0 /* LaunchScreen.storyboard */; };
+		C008CB3020452E0D00DDA4C0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C008CB2F20452E0D00DDA4C0 /* main.m */; };
+		C008CB3A20452E0D00DDA4C0 /* yanxuanTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C008CB3920452E0D00DDA4C0 /* yanxuanTests.m */; };
+		C008CB4520452E0D00DDA4C0 /* yanxuanUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = C008CB4420452E0D00DDA4C0 /* yanxuanUITests.m */; };
+		C008CB5E204532D400DDA4C0 /* ListModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C008CB5B204532D400DDA4C0 /* ListModel.m */; };
+		C008CB642045332D00DDA4C0 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C008CB632045332D00DDA4C0 /* HomeViewController.m */; };
+		C008CB6E20453C7000DDA4C0 /* YXSegmentedControl.m in Sources */ = {isa = PBXBuildFile; fileRef = C008CB6D20453C7000DDA4C0 /* YXSegmentedControl.m */; };
+		C008CB7D204543D200DDA4C0 /* YXGoodsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C008CB7C204543D200DDA4C0 /* YXGoodsViewController.m */; };
+		C008CB802045444B00DDA4C0 /* YXGoodsSpecViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C008CB7F2045444B00DDA4C0 /* YXGoodsSpecViewController.m */; };
+		C008CB832045446200DDA4C0 /* YXGoodsDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C008CB822045446200DDA4C0 /* YXGoodsDetailViewController.m */; };
+		C008CB8A20454D9600DDA4C0 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C008CB8720454D9600DDA4C0 /* BaseViewController.m */; };
+		C008CB8D20454DB300DDA4C0 /* BaseNavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C008CB8C20454DB300DDA4C0 /* BaseNavigationViewController.m */; };
+		C008CB902045552C00DDA4C0 /* BaseTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C008CB8F2045552C00DDA4C0 /* BaseTableViewCell.m */; };
+		C008CB9A20455F7300DDA4C0 /* UIView+Common.m in Sources */ = {isa = PBXBuildFile; fileRef = C008CB9920455F7300DDA4C0 /* UIView+Common.m */; };
+		C008CBA3204642E900DDA4C0 /* UIColor+Common.m in Sources */ = {isa = PBXBuildFile; fileRef = C008CBA2204642E900DDA4C0 /* UIColor+Common.m */; };
+		C008CBA62046457300DDA4C0 /* YXGoodsDetailOperationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = C008CBA52046457300DDA4C0 /* YXGoodsDetailOperationBar.m */; };
+		C008CBA92046540E00DDA4C0 /* YXGoodsNavigationButton.m in Sources */ = {isa = PBXBuildFile; fileRef = C008CBA82046540E00DDA4C0 /* YXGoodsNavigationButton.m */; };
+		C008CBAC2046584100DDA4C0 /* YXGoodsBackToTopButton.m in Sources */ = {isa = PBXBuildFile; fileRef = C008CBAB2046584100DDA4C0 /* YXGoodsBackToTopButton.m */; };
+		C008CBC820466BB500DDA4C0 /* YXGoodsSpecBannerTabCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C008CBC720466BB500DDA4C0 /* YXGoodsSpecBannerTabCell.m */; };
+		C008CBCB20466BCD00DDA4C0 /* YXGoodsSpecDescriptTabCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C008CBCA20466BCD00DDA4C0 /* YXGoodsSpecDescriptTabCell.m */; };
+		C008CBCE20466BE800DDA4C0 /* YXGoodsSpecFeatureTabCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C008CBCD20466BE800DDA4C0 /* YXGoodsSpecFeatureTabCell.m */; };
+		C008CBD120466C2C00DDA4C0 /* YXGoodsSpecSpecTabCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C008CBD020466C2C00DDA4C0 /* YXGoodsSpecSpecTabCell.m */; };
+		C008CBD420466C5500DDA4C0 /* YXGoodsSpecCouponTabCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C008CBD320466C5500DDA4C0 /* YXGoodsSpecCouponTabCell.m */; };
+		C008CBD720466CA000DDA4C0 /* YXGoodsSpecIntegralTabCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C008CBD620466CA000DDA4C0 /* YXGoodsSpecIntegralTabCell.m */; };
+		C008CBDA20466CED00DDA4C0 /* YXGoodsSpecServicePolicyTabCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C008CBD920466CED00DDA4C0 /* YXGoodsSpecServicePolicyTabCell.m */; };
+		C008CBDD20466D2100DDA4C0 /* YXGoodsSpecHotCommentMenuTabCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C008CBDC20466D2100DDA4C0 /* YXGoodsSpecHotCommentMenuTabCell.m */; };
+		C008CBE020466D3B00DDA4C0 /* YXGoodsSpecHotCommentTabCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C008CBDF20466D3B00DDA4C0 /* YXGoodsSpecHotCommentTabCell.m */; };
+		C008CBE320466FD100DDA4C0 /* YXGoodsSpecRecommendationTabCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C008CBE220466FD100DDA4C0 /* YXGoodsSpecRecommendationTabCell.m */; };
+		C008CC0D2046801100DDA4C0 /* YXGoodsEvaluationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C008CC0C2046801100DDA4C0 /* YXGoodsEvaluationViewController.m */; };
+		C008CC102046839100DDA4C0 /* HttpRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = C008CC0F2046839100DDA4C0 /* HttpRequest.m */; };
+		C008CC2520469A6C00DDA4C0 /* NSDictionary+Common.m in Sources */ = {isa = PBXBuildFile; fileRef = C008CC2420469A6C00DDA4C0 /* NSDictionary+Common.m */; };
+		C008CC3220469E2F00DDA4C0 /* YXGoodsNavigationViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C008CC3120469E2F00DDA4C0 /* YXGoodsNavigationViewModel.m */; };
+		C008CC352046BA0600DDA4C0 /* YXGoodsSpecBannerViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C008CC342046BA0600DDA4C0 /* YXGoodsSpecBannerViewModel.m */; };
+		C008CCAF2046CDD600DDA4C0 /* YXGoodsBannerScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = C008CCAE2046CDD600DDA4C0 /* YXGoodsBannerScrollView.m */; };
+		C008CCB220478A6B00DDA4C0 /* YXGoodsCellViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C008CCB120478A6B00DDA4C0 /* YXGoodsCellViewModel.m */; };
+		C008CCB520478BCB00DDA4C0 /* YXGoodsSpecFeatureViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C008CCB420478BCB00DDA4C0 /* YXGoodsSpecFeatureViewModel.m */; };
+		C008CCB820478BE200DDA4C0 /* YXGoodsSpecDescriptViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C008CCB720478BE200DDA4C0 /* YXGoodsSpecDescriptViewModel.m */; };
+		C008CCBB20478C4900DDA4C0 /* YXGoodsSpecBaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C008CCBA20478C4900DDA4C0 /* YXGoodsSpecBaseModel.m */; };
+		C008CCC120478D1800DDA4C0 /* YXGoodsSpecBannerModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C008CCC020478D1800DDA4C0 /* YXGoodsSpecBannerModel.m */; };
+		C008CCC420478D9200DDA4C0 /* YXGoodsSpecFeatureModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C008CCC320478D9200DDA4C0 /* YXGoodsSpecFeatureModel.m */; };
+		C008CCC720478DBA00DDA4C0 /* YXGoodsSpecDescriptModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C008CCC620478DBA00DDA4C0 /* YXGoodsSpecDescriptModel.m */; };
+		C008CCCA20478DDA00DDA4C0 /* YXGoodsSpecSpecModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C008CCC920478DDA00DDA4C0 /* YXGoodsSpecSpecModel.m */; };
+		C008CCCD20478DF400DDA4C0 /* YXGoodsSpecCouponModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C008CCCC20478DF400DDA4C0 /* YXGoodsSpecCouponModel.m */; };
+		C008CCD020478E0F00DDA4C0 /* YXGoodsSpecIntegralModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C008CCCF20478E0F00DDA4C0 /* YXGoodsSpecIntegralModel.m */; };
+		C008CCD320478E1F00DDA4C0 /* YXGoodsSpecServicePolicyModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C008CCD220478E1F00DDA4C0 /* YXGoodsSpecServicePolicyModel.m */; };
+		C008CCD620478E3800DDA4C0 /* YXGoodsSpecHotCommentMenuModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C008CCD520478E3800DDA4C0 /* YXGoodsSpecHotCommentMenuModel.m */; };
+		C008CCD920478E5100DDA4C0 /* YXGoodsSpecHotCommentModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C008CCD820478E5100DDA4C0 /* YXGoodsSpecHotCommentModel.m */; };
+		C008CCDC20478E6500DDA4C0 /* YXGoodsSpecRecommedationModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C008CCDB20478E6500DDA4C0 /* YXGoodsSpecRecommedationModel.m */; };
+		C008CCDF20478EC800DDA4C0 /* YXGoodsSpecSpecViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C008CCDE20478EC800DDA4C0 /* YXGoodsSpecSpecViewModel.m */; };
+		C008CCE220478EEF00DDA4C0 /* YXGoodsSpecCouponViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C008CCE120478EEF00DDA4C0 /* YXGoodsSpecCouponViewModel.m */; };
+		C008CCE520478F0300DDA4C0 /* YXGoodsSpecIntegralViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C008CCE420478F0300DDA4C0 /* YXGoodsSpecIntegralViewModel.m */; };
+		C008CCE820478F2300DDA4C0 /* YXGoodsSpecServicePolicyViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C008CCE720478F2300DDA4C0 /* YXGoodsSpecServicePolicyViewModel.m */; };
+		C008CCEB20478F4600DDA4C0 /* YXGoodsSpecHotCommentMenuViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C008CCEA20478F4600DDA4C0 /* YXGoodsSpecHotCommentMenuViewModel.m */; };
+		C008CCEE20478F5A00DDA4C0 /* YXGoodsSpecHotCommentViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C008CCED20478F5A00DDA4C0 /* YXGoodsSpecHotCommentViewModel.m */; };
+		C008CCF120478F6E00DDA4C0 /* YXGoodsSpecRecommedationViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C008CCF020478F6E00DDA4C0 /* YXGoodsSpecRecommedationViewModel.m */; };
+		C008CCF62047D6E100DDA4C0 /* YXGoodsSpecBaseCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C008CCF52047D6E100DDA4C0 /* YXGoodsSpecBaseCell.m */; };
+		C008CCFC2047E80B00DDA4C0 /* YXGoodsBannerCellIdxLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = C008CCFB2047E80B00DDA4C0 /* YXGoodsBannerCellIdxLabel.m */; };
+		C008CCFF2047F1D100DDA4C0 /* YXGoodsBannerScaleImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = C008CCFE2047F1D100DDA4C0 /* YXGoodsBannerScaleImageView.m */; };
+		C008CD0220480FF000DDA4C0 /* YXGoodsSpecBaseViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C008CD0120480FF000DDA4C0 /* YXGoodsSpecBaseViewModel.m */; };
+		C008CD052048128A00DDA4C0 /* YXGoodsSpecFeatureCellView.m in Sources */ = {isa = PBXBuildFile; fileRef = C008CD042048128A00DDA4C0 /* YXGoodsSpecFeatureCellView.m */; };
+		C008CD0B2048DE5700DDA4C0 /* NSObject+Swizzle.m in Sources */ = {isa = PBXBuildFile; fileRef = C008CD0A2048DE5700DDA4C0 /* NSObject+Swizzle.m */; };
+		C008CD0E2048F25800DDA4C0 /* UITableViewCell+Common.m in Sources */ = {isa = PBXBuildFile; fileRef = C008CD0D2048F25800DDA4C0 /* UITableViewCell+Common.m */; };
+		C008CD142049085100DDA4C0 /* YXGoodsSpecCouponImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = C008CD132049085100DDA4C0 /* YXGoodsSpecCouponImageView.m */; };
+		C008CD172049100900DDA4C0 /* NSObject+Safe.m in Sources */ = {isa = PBXBuildFile; fileRef = C008CD162049100900DDA4C0 /* NSObject+Safe.m */; };
+		C008CD1D20491F4200DDA4C0 /* YXGoodsSpecServiceDotView.m in Sources */ = {isa = PBXBuildFile; fileRef = C008CD1C20491F4200DDA4C0 /* YXGoodsSpecServiceDotView.m */; };
+		C008CD2020491F7A00DDA4C0 /* YXGoodsSpecServicePolicyView.m in Sources */ = {isa = PBXBuildFile; fileRef = C008CD1F20491F7A00DDA4C0 /* YXGoodsSpecServicePolicyView.m */; };
+		C008CD232049278600DDA4C0 /* YXGoodsSpecServiceDotCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C008CD222049278600DDA4C0 /* YXGoodsSpecServiceDotCell.m */; };
+		C008CD292049464900DDA4C0 /* YXGoodsSpecServicePolicyLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = C008CD282049464900DDA4C0 /* YXGoodsSpecServicePolicyLayout.m */; };
+		C02CF337204CFEB40019DCDC /* UIViewController+AdjustView.m in Sources */ = {isa = PBXBuildFile; fileRef = C02CF336204CFEB40019DCDC /* UIViewController+AdjustView.m */; };
+		C05A4A1A204D4EE500DC1268 /* UIView+AddSubViews.m in Sources */ = {isa = PBXBuildFile; fileRef = C05A4A19204D4EE500DC1268 /* UIView+AddSubViews.m */; };
+		C05A4A20204E306A00DC1268 /* YXGoodsSpecDragToIntroductionView.m in Sources */ = {isa = PBXBuildFile; fileRef = C05A4A1F204E306A00DC1268 /* YXGoodsSpecDragToIntroductionView.m */; };
+		C05A4A23204E4EFF00DC1268 /* YXGoodsSpecHeaderFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = C05A4A22204E4EFF00DC1268 /* YXGoodsSpecHeaderFooterView.m */; };
+		C05A4A29204FBCE200DC1268 /* YXGoodsViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C05A4A28204FBCE200DC1268 /* YXGoodsViewModel.m */; };
+		DCAF07A6E0DAEA0EBA611394 /* libPods-yanxuanUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 531240D8FB726D0A392B2F62 /* libPods-yanxuanUITests.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C008CB3620452E0D00DDA4C0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C008CB1520452E0D00DDA4C0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C008CB1C20452E0D00DDA4C0;
+			remoteInfo = yanxuan;
+		};
+		C008CB4120452E0D00DDA4C0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C008CB1520452E0D00DDA4C0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C008CB1C20452E0D00DDA4C0;
+			remoteInfo = yanxuan;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0B29D425EE26A1143A17607F /* Pods-yanxuanUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-yanxuanUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-yanxuanUITests/Pods-yanxuanUITests.release.xcconfig"; sourceTree = "<group>"; };
+		245B96FE204836C100D8D949 /* NSObject+Common.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+Common.h"; sourceTree = "<group>"; };
+		245B96FF204836C100D8D949 /* NSObject+Common.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Common.m"; sourceTree = "<group>"; };
+		245B970120483C7B00D8D949 /* YXGoodsSpecDescriptRightView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YXGoodsSpecDescriptRightView.h; sourceTree = "<group>"; };
+		245B970220483C7B00D8D949 /* YXGoodsSpecDescriptRightView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YXGoodsSpecDescriptRightView.m; sourceTree = "<group>"; };
+		245B9708204AD16B00D8D949 /* YXGoodsSpecCommentStarLevelView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YXGoodsSpecCommentStarLevelView.h; sourceTree = "<group>"; };
+		245B9709204AD16B00D8D949 /* YXGoodsSpecCommentStarLevelView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YXGoodsSpecCommentStarLevelView.m; sourceTree = "<group>"; };
+		245B970B204AD18C00D8D949 /* YXGoodsSpecCommentImagesView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YXGoodsSpecCommentImagesView.h; sourceTree = "<group>"; };
+		245B970C204AD18C00D8D949 /* YXGoodsSpecCommentImagesView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YXGoodsSpecCommentImagesView.m; sourceTree = "<group>"; };
+		245B970E204B075D00D8D949 /* NSDate+Convert.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSDate+Convert.h"; sourceTree = "<group>"; };
+		245B970F204B075D00D8D949 /* NSDate+Convert.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Convert.m"; sourceTree = "<group>"; };
+		245B9714204B0EAB00D8D949 /* UILabel+Common.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UILabel+Common.h"; sourceTree = "<group>"; };
+		245B9715204B0EAC00D8D949 /* UILabel+Common.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UILabel+Common.m"; sourceTree = "<group>"; };
+		245B9717204BF13900D8D949 /* YXGoodsSpecHotCommentImageCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YXGoodsSpecHotCommentImageCell.h; sourceTree = "<group>"; };
+		245B9718204BF13900D8D949 /* YXGoodsSpecHotCommentImageCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YXGoodsSpecHotCommentImageCell.m; sourceTree = "<group>"; };
+		245B9720204C101600D8D949 /* YXGoodsSpecRecommedationItemTagModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YXGoodsSpecRecommedationItemTagModel.h; sourceTree = "<group>"; };
+		245B9721204C101600D8D949 /* YXGoodsSpecRecommedationItemTagModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YXGoodsSpecRecommedationItemTagModel.m; sourceTree = "<group>"; };
+		245B9724204C2A0000D8D949 /* HTSegmentsCellView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTSegmentsCellView.h; sourceTree = "<group>"; };
+		245B9725204C2A0000D8D949 /* HTSegmentsCellView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTSegmentsCellView.m; sourceTree = "<group>"; };
+		245B9726204C2A0000D8D949 /* HTSegmentsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTSegmentsView.h; sourceTree = "<group>"; };
+		245B9727204C2A0000D8D949 /* HTSegmentsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTSegmentsView.m; sourceTree = "<group>"; };
+		245B9728204C2A0000D8D949 /* HTSegmentsViewAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTSegmentsViewAnimator.h; sourceTree = "<group>"; };
+		245B9729204C2A0000D8D949 /* HTSegmentsViewAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTSegmentsViewAnimator.m; sourceTree = "<group>"; };
+		245B972D204C2B2100D8D949 /* ColorUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ColorUtils.m; sourceTree = "<group>"; };
+		245B972E204C2B2100D8D949 /* ColorUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColorUtils.h; sourceTree = "<group>"; };
+		245B9730204C31A600D8D949 /* YXGoodsSpecRecommedationSegmentsView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YXGoodsSpecRecommedationSegmentsView.h; sourceTree = "<group>"; };
+		245B9731204C31A600D8D949 /* YXGoodsSpecRecommedationSegmentsView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YXGoodsSpecRecommedationSegmentsView.m; sourceTree = "<group>"; };
+		245B9733204C3CA600D8D949 /* YXGoodsSpecRecommedationGoodsView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YXGoodsSpecRecommedationGoodsView.h; sourceTree = "<group>"; };
+		245B9734204C3CA600D8D949 /* YXGoodsSpecRecommedationGoodsView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YXGoodsSpecRecommedationGoodsView.m; sourceTree = "<group>"; };
+		245B9736204C41DA00D8D949 /* YXGoodsSpecRecommendationGoodsCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YXGoodsSpecRecommendationGoodsCell.h; sourceTree = "<group>"; };
+		245B9737204C41DA00D8D949 /* YXGoodsSpecRecommendationGoodsCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YXGoodsSpecRecommendationGoodsCell.m; sourceTree = "<group>"; };
+		245B9739204C52BA00D8D949 /* YXGoodsSpecRecommedationGoodsStatusView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YXGoodsSpecRecommedationGoodsStatusView.h; sourceTree = "<group>"; };
+		245B973A204C52BA00D8D949 /* YXGoodsSpecRecommedationGoodsStatusView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YXGoodsSpecRecommedationGoodsStatusView.m; sourceTree = "<group>"; };
+		4CF8BED2F428803C6E98B2E2 /* Pods-yanxuanTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-yanxuanTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-yanxuanTests/Pods-yanxuanTests.debug.xcconfig"; sourceTree = "<group>"; };
+		531240D8FB726D0A392B2F62 /* libPods-yanxuanUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-yanxuanUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5CD9B97A78E8EFE775F379CA /* Pods-yanxuanTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-yanxuanTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-yanxuanTests/Pods-yanxuanTests.release.xcconfig"; sourceTree = "<group>"; };
+		7DDAA831624D82CD9BC5B455 /* Pods-yanxuanUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-yanxuanUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-yanxuanUITests/Pods-yanxuanUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		C008CB1D20452E0D00DDA4C0 /* yanxuan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = yanxuan.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C008CB2020452E0D00DDA4C0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		C008CB2120452E0D00DDA4C0 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		C008CB2720452E0D00DDA4C0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C008CB2920452E0D00DDA4C0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C008CB2C20452E0D00DDA4C0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C008CB2E20452E0D00DDA4C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C008CB2F20452E0D00DDA4C0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C008CB3520452E0D00DDA4C0 /* yanxuanTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = yanxuanTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C008CB3920452E0D00DDA4C0 /* yanxuanTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = yanxuanTests.m; sourceTree = "<group>"; };
+		C008CB3B20452E0D00DDA4C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C008CB4020452E0D00DDA4C0 /* yanxuanUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = yanxuanUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C008CB4420452E0D00DDA4C0 /* yanxuanUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = yanxuanUITests.m; sourceTree = "<group>"; };
+		C008CB4620452E0D00DDA4C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C008CB5A204532D400DDA4C0 /* ListModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListModel.h; sourceTree = "<group>"; };
+		C008CB5B204532D400DDA4C0 /* ListModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListModel.m; sourceTree = "<group>"; };
+		C008CB622045332D00DDA4C0 /* HomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		C008CB632045332D00DDA4C0 /* HomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		C008CB6C20453C7000DDA4C0 /* YXSegmentedControl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YXSegmentedControl.h; sourceTree = "<group>"; };
+		C008CB6D20453C7000DDA4C0 /* YXSegmentedControl.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YXSegmentedControl.m; sourceTree = "<group>"; };
+		C008CB7B204543D200DDA4C0 /* YXGoodsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YXGoodsViewController.h; sourceTree = "<group>"; };
+		C008CB7C204543D200DDA4C0 /* YXGoodsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YXGoodsViewController.m; sourceTree = "<group>"; };
+		C008CB7E2045444B00DDA4C0 /* YXGoodsSpecViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YXGoodsSpecViewController.h; sourceTree = "<group>"; };
+		C008CB7F2045444B00DDA4C0 /* YXGoodsSpecViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YXGoodsSpecViewController.m; sourceTree = "<group>"; };
+		C008CB812045446200DDA4C0 /* YXGoodsDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YXGoodsDetailViewController.h; sourceTree = "<group>"; };
+		C008CB822045446200DDA4C0 /* YXGoodsDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YXGoodsDetailViewController.m; sourceTree = "<group>"; };
+		C008CB8620454D9600DDA4C0 /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		C008CB8720454D9600DDA4C0 /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		C008CB8B20454DB300DDA4C0 /* BaseNavigationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseNavigationViewController.h; sourceTree = "<group>"; };
+		C008CB8C20454DB300DDA4C0 /* BaseNavigationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseNavigationViewController.m; sourceTree = "<group>"; };
+		C008CB8E2045552C00DDA4C0 /* BaseTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseTableViewCell.h; sourceTree = "<group>"; };
+		C008CB8F2045552C00DDA4C0 /* BaseTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseTableViewCell.m; sourceTree = "<group>"; };
+		C008CB962045561900DDA4C0 /* DefineFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DefineFile.h; sourceTree = "<group>"; };
+		C008CB9820455F7300DDA4C0 /* UIView+Common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Common.h"; sourceTree = "<group>"; };
+		C008CB9920455F7300DDA4C0 /* UIView+Common.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Common.m"; sourceTree = "<group>"; };
+		C008CBA1204642E900DDA4C0 /* UIColor+Common.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIColor+Common.h"; sourceTree = "<group>"; };
+		C008CBA2204642E900DDA4C0 /* UIColor+Common.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Common.m"; sourceTree = "<group>"; };
+		C008CBA42046457300DDA4C0 /* YXGoodsDetailOperationBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YXGoodsDetailOperationBar.h; sourceTree = "<group>"; };
+		C008CBA52046457300DDA4C0 /* YXGoodsDetailOperationBar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YXGoodsDetailOperationBar.m; sourceTree = "<group>"; };
+		C008CBA72046540E00DDA4C0 /* YXGoodsNavigationButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YXGoodsNavigationButton.h; sourceTree = "<group>"; };
+		C008CBA82046540E00DDA4C0 /* YXGoodsNavigationButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YXGoodsNavigationButton.m; sourceTree = "<group>"; };
+		C008CBAA2046584100DDA4C0 /* YXGoodsBackToTopButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YXGoodsBackToTopButton.h; sourceTree = "<group>"; };
+		C008CBAB2046584100DDA4C0 /* YXGoodsBackToTopButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YXGoodsBackToTopButton.m; sourceTree = "<group>"; };
+		C008CBC620466BB500DDA4C0 /* YXGoodsSpecBannerTabCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YXGoodsSpecBannerTabCell.h; sourceTree = "<group>"; };
+		C008CBC720466BB500DDA4C0 /* YXGoodsSpecBannerTabCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YXGoodsSpecBannerTabCell.m; sourceTree = "<group>"; };
+		C008CBC920466BCD00DDA4C0 /* YXGoodsSpecDescriptTabCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YXGoodsSpecDescriptTabCell.h; sourceTree = "<group>"; };
+		C008CBCA20466BCD00DDA4C0 /* YXGoodsSpecDescriptTabCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YXGoodsSpecDescriptTabCell.m; sourceTree = "<group>"; };
+		C008CBCC20466BE800DDA4C0 /* YXGoodsSpecFeatureTabCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YXGoodsSpecFeatureTabCell.h; sourceTree = "<group>"; };
+		C008CBCD20466BE800DDA4C0 /* YXGoodsSpecFeatureTabCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YXGoodsSpecFeatureTabCell.m; sourceTree = "<group>"; };
+		C008CBCF20466C2C00DDA4C0 /* YXGoodsSpecSpecTabCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YXGoodsSpecSpecTabCell.h; sourceTree = "<group>"; };
+		C008CBD020466C2C00DDA4C0 /* YXGoodsSpecSpecTabCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YXGoodsSpecSpecTabCell.m; sourceTree = "<group>"; };
+		C008CBD220466C5500DDA4C0 /* YXGoodsSpecCouponTabCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YXGoodsSpecCouponTabCell.h; sourceTree = "<group>"; };
+		C008CBD320466C5500DDA4C0 /* YXGoodsSpecCouponTabCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YXGoodsSpecCouponTabCell.m; sourceTree = "<group>"; };
+		C008CBD520466CA000DDA4C0 /* YXGoodsSpecIntegralTabCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YXGoodsSpecIntegralTabCell.h; sourceTree = "<group>"; };
+		C008CBD620466CA000DDA4C0 /* YXGoodsSpecIntegralTabCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YXGoodsSpecIntegralTabCell.m; sourceTree = "<group>"; };
+		C008CBD820466CED00DDA4C0 /* YXGoodsSpecServicePolicyTabCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YXGoodsSpecServicePolicyTabCell.h; sourceTree = "<group>"; };
+		C008CBD920466CED00DDA4C0 /* YXGoodsSpecServicePolicyTabCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YXGoodsSpecServicePolicyTabCell.m; sourceTree = "<group>"; };
+		C008CBDB20466D2100DDA4C0 /* YXGoodsSpecHotCommentMenuTabCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YXGoodsSpecHotCommentMenuTabCell.h; sourceTree = "<group>"; };
+		C008CBDC20466D2100DDA4C0 /* YXGoodsSpecHotCommentMenuTabCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YXGoodsSpecHotCommentMenuTabCell.m; sourceTree = "<group>"; };
+		C008CBDE20466D3B00DDA4C0 /* YXGoodsSpecHotCommentTabCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YXGoodsSpecHotCommentTabCell.h; sourceTree = "<group>"; };
+		C008CBDF20466D3B00DDA4C0 /* YXGoodsSpecHotCommentTabCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YXGoodsSpecHotCommentTabCell.m; sourceTree = "<group>"; };
+		C008CBE120466FD100DDA4C0 /* YXGoodsSpecRecommendationTabCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YXGoodsSpecRecommendationTabCell.h; sourceTree = "<group>"; };
+		C008CBE220466FD100DDA4C0 /* YXGoodsSpecRecommendationTabCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YXGoodsSpecRecommendationTabCell.m; sourceTree = "<group>"; };
+		C008CC0B2046801100DDA4C0 /* YXGoodsEvaluationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YXGoodsEvaluationViewController.h; sourceTree = "<group>"; };
+		C008CC0C2046801100DDA4C0 /* YXGoodsEvaluationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YXGoodsEvaluationViewController.m; sourceTree = "<group>"; };
+		C008CC0E2046839100DDA4C0 /* HttpRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HttpRequest.h; sourceTree = "<group>"; };
+		C008CC0F2046839100DDA4C0 /* HttpRequest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HttpRequest.m; sourceTree = "<group>"; };
+		C008CC2320469A6C00DDA4C0 /* NSDictionary+Common.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+Common.h"; sourceTree = "<group>"; };
+		C008CC2420469A6C00DDA4C0 /* NSDictionary+Common.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+Common.m"; sourceTree = "<group>"; };
+		C008CC3020469E2F00DDA4C0 /* YXGoodsNavigationViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YXGoodsNavigationViewModel.h; sourceTree = "<group>"; };
+		C008CC3120469E2F00DDA4C0 /* YXGoodsNavigationViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YXGoodsNavigationViewModel.m; sourceTree = "<group>"; };
+		C008CC332046BA0600DDA4C0 /* YXGoodsSpecBannerViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YXGoodsSpecBannerViewModel.h; sourceTree = "<group>"; };
+		C008CC342046BA0600DDA4C0 /* YXGoodsSpecBannerViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YXGoodsSpecBannerViewModel.m; sourceTree = "<group>"; };
+		C008CC382046C74800DDA4C0 /* WebP.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebP.framework; path = yanxuan/Resource/WebP.framework; sourceTree = "<group>"; };
+		C008CC392046C74900DDA4C0 /* WebPDecoder.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebPDecoder.framework; path = yanxuan/Resource/WebPDecoder.framework; sourceTree = "<group>"; };
+		C008CCAD2046CDD600DDA4C0 /* YXGoodsBannerScrollView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YXGoodsBannerScrollView.h; sourceTree = "<group>"; };
+		C008CCAE2046CDD600DDA4C0 /* YXGoodsBannerScrollView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YXGoodsBannerScrollView.m; sourceTree = "<group>"; };
+		C008CCB020478A6B00DDA4C0 /* YXGoodsCellViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YXGoodsCellViewModel.h; sourceTree = "<group>"; };
+		C008CCB120478A6B00DDA4C0 /* YXGoodsCellViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YXGoodsCellViewModel.m; sourceTree = "<group>"; };
+		C008CCB320478BCB00DDA4C0 /* YXGoodsSpecFeatureViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YXGoodsSpecFeatureViewModel.h; sourceTree = "<group>"; };
+		C008CCB420478BCB00DDA4C0 /* YXGoodsSpecFeatureViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YXGoodsSpecFeatureViewModel.m; sourceTree = "<group>"; };
+		C008CCB620478BE200DDA4C0 /* YXGoodsSpecDescriptViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YXGoodsSpecDescriptViewModel.h; sourceTree = "<group>"; };
+		C008CCB720478BE200DDA4C0 /* YXGoodsSpecDescriptViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YXGoodsSpecDescriptViewModel.m; sourceTree = "<group>"; };
+		C008CCB920478C4900DDA4C0 /* YXGoodsSpecBaseModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YXGoodsSpecBaseModel.h; sourceTree = "<group>"; };
+		C008CCBA20478C4900DDA4C0 /* YXGoodsSpecBaseModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YXGoodsSpecBaseModel.m; sourceTree = "<group>"; };
+		C008CCBF20478D1800DDA4C0 /* YXGoodsSpecBannerModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YXGoodsSpecBannerModel.h; sourceTree = "<group>"; };
+		C008CCC020478D1800DDA4C0 /* YXGoodsSpecBannerModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YXGoodsSpecBannerModel.m; sourceTree = "<group>"; };
+		C008CCC220478D9200DDA4C0 /* YXGoodsSpecFeatureModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YXGoodsSpecFeatureModel.h; sourceTree = "<group>"; };
+		C008CCC320478D9200DDA4C0 /* YXGoodsSpecFeatureModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YXGoodsSpecFeatureModel.m; sourceTree = "<group>"; };
+		C008CCC520478DBA00DDA4C0 /* YXGoodsSpecDescriptModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YXGoodsSpecDescriptModel.h; sourceTree = "<group>"; };
+		C008CCC620478DBA00DDA4C0 /* YXGoodsSpecDescriptModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YXGoodsSpecDescriptModel.m; sourceTree = "<group>"; };
+		C008CCC820478DDA00DDA4C0 /* YXGoodsSpecSpecModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YXGoodsSpecSpecModel.h; sourceTree = "<group>"; };
+		C008CCC920478DDA00DDA4C0 /* YXGoodsSpecSpecModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YXGoodsSpecSpecModel.m; sourceTree = "<group>"; };
+		C008CCCB20478DF400DDA4C0 /* YXGoodsSpecCouponModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YXGoodsSpecCouponModel.h; sourceTree = "<group>"; };
+		C008CCCC20478DF400DDA4C0 /* YXGoodsSpecCouponModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YXGoodsSpecCouponModel.m; sourceTree = "<group>"; };
+		C008CCCE20478E0F00DDA4C0 /* YXGoodsSpecIntegralModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YXGoodsSpecIntegralModel.h; sourceTree = "<group>"; };
+		C008CCCF20478E0F00DDA4C0 /* YXGoodsSpecIntegralModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YXGoodsSpecIntegralModel.m; sourceTree = "<group>"; };
+		C008CCD120478E1F00DDA4C0 /* YXGoodsSpecServicePolicyModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YXGoodsSpecServicePolicyModel.h; sourceTree = "<group>"; };
+		C008CCD220478E1F00DDA4C0 /* YXGoodsSpecServicePolicyModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YXGoodsSpecServicePolicyModel.m; sourceTree = "<group>"; };
+		C008CCD420478E3800DDA4C0 /* YXGoodsSpecHotCommentMenuModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YXGoodsSpecHotCommentMenuModel.h; sourceTree = "<group>"; };
+		C008CCD520478E3800DDA4C0 /* YXGoodsSpecHotCommentMenuModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YXGoodsSpecHotCommentMenuModel.m; sourceTree = "<group>"; };
+		C008CCD720478E5100DDA4C0 /* YXGoodsSpecHotCommentModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YXGoodsSpecHotCommentModel.h; sourceTree = "<group>"; };
+		C008CCD820478E5100DDA4C0 /* YXGoodsSpecHotCommentModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YXGoodsSpecHotCommentModel.m; sourceTree = "<group>"; };
+		C008CCDA20478E6500DDA4C0 /* YXGoodsSpecRecommedationModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YXGoodsSpecRecommedationModel.h; sourceTree = "<group>"; };
+		C008CCDB20478E6500DDA4C0 /* YXGoodsSpecRecommedationModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YXGoodsSpecRecommedationModel.m; sourceTree = "<group>"; };
+		C008CCDD20478EC800DDA4C0 /* YXGoodsSpecSpecViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YXGoodsSpecSpecViewModel.h; sourceTree = "<group>"; };
+		C008CCDE20478EC800DDA4C0 /* YXGoodsSpecSpecViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YXGoodsSpecSpecViewModel.m; sourceTree = "<group>"; };
+		C008CCE020478EEF00DDA4C0 /* YXGoodsSpecCouponViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YXGoodsSpecCouponViewModel.h; sourceTree = "<group>"; };
+		C008CCE120478EEF00DDA4C0 /* YXGoodsSpecCouponViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YXGoodsSpecCouponViewModel.m; sourceTree = "<group>"; };
+		C008CCE320478F0300DDA4C0 /* YXGoodsSpecIntegralViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YXGoodsSpecIntegralViewModel.h; sourceTree = "<group>"; };
+		C008CCE420478F0300DDA4C0 /* YXGoodsSpecIntegralViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YXGoodsSpecIntegralViewModel.m; sourceTree = "<group>"; };
+		C008CCE620478F2300DDA4C0 /* YXGoodsSpecServicePolicyViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YXGoodsSpecServicePolicyViewModel.h; sourceTree = "<group>"; };
+		C008CCE720478F2300DDA4C0 /* YXGoodsSpecServicePolicyViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YXGoodsSpecServicePolicyViewModel.m; sourceTree = "<group>"; };
+		C008CCE920478F4600DDA4C0 /* YXGoodsSpecHotCommentMenuViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YXGoodsSpecHotCommentMenuViewModel.h; sourceTree = "<group>"; };
+		C008CCEA20478F4600DDA4C0 /* YXGoodsSpecHotCommentMenuViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YXGoodsSpecHotCommentMenuViewModel.m; sourceTree = "<group>"; };
+		C008CCEC20478F5A00DDA4C0 /* YXGoodsSpecHotCommentViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YXGoodsSpecHotCommentViewModel.h; sourceTree = "<group>"; };
+		C008CCED20478F5A00DDA4C0 /* YXGoodsSpecHotCommentViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YXGoodsSpecHotCommentViewModel.m; sourceTree = "<group>"; };
+		C008CCEF20478F6E00DDA4C0 /* YXGoodsSpecRecommedationViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YXGoodsSpecRecommedationViewModel.h; sourceTree = "<group>"; };
+		C008CCF020478F6E00DDA4C0 /* YXGoodsSpecRecommedationViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YXGoodsSpecRecommedationViewModel.m; sourceTree = "<group>"; };
+		C008CCF42047D6E100DDA4C0 /* YXGoodsSpecBaseCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YXGoodsSpecBaseCell.h; sourceTree = "<group>"; };
+		C008CCF52047D6E100DDA4C0 /* YXGoodsSpecBaseCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YXGoodsSpecBaseCell.m; sourceTree = "<group>"; };
+		C008CCFA2047E80B00DDA4C0 /* YXGoodsBannerCellIdxLabel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YXGoodsBannerCellIdxLabel.h; sourceTree = "<group>"; };
+		C008CCFB2047E80B00DDA4C0 /* YXGoodsBannerCellIdxLabel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YXGoodsBannerCellIdxLabel.m; sourceTree = "<group>"; };
+		C008CCFD2047F1D100DDA4C0 /* YXGoodsBannerScaleImageView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YXGoodsBannerScaleImageView.h; sourceTree = "<group>"; };
+		C008CCFE2047F1D100DDA4C0 /* YXGoodsBannerScaleImageView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YXGoodsBannerScaleImageView.m; sourceTree = "<group>"; };
+		C008CD0020480FF000DDA4C0 /* YXGoodsSpecBaseViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YXGoodsSpecBaseViewModel.h; sourceTree = "<group>"; };
+		C008CD0120480FF000DDA4C0 /* YXGoodsSpecBaseViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YXGoodsSpecBaseViewModel.m; sourceTree = "<group>"; };
+		C008CD032048128A00DDA4C0 /* YXGoodsSpecFeatureCellView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YXGoodsSpecFeatureCellView.h; sourceTree = "<group>"; };
+		C008CD042048128A00DDA4C0 /* YXGoodsSpecFeatureCellView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YXGoodsSpecFeatureCellView.m; sourceTree = "<group>"; };
+		C008CD092048DE5700DDA4C0 /* NSObject+Swizzle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+Swizzle.h"; sourceTree = "<group>"; };
+		C008CD0A2048DE5700DDA4C0 /* NSObject+Swizzle.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Swizzle.m"; sourceTree = "<group>"; };
+		C008CD0C2048F25800DDA4C0 /* UITableViewCell+Common.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UITableViewCell+Common.h"; sourceTree = "<group>"; };
+		C008CD0D2048F25800DDA4C0 /* UITableViewCell+Common.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UITableViewCell+Common.m"; sourceTree = "<group>"; };
+		C008CD122049085100DDA4C0 /* YXGoodsSpecCouponImageView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YXGoodsSpecCouponImageView.h; sourceTree = "<group>"; };
+		C008CD132049085100DDA4C0 /* YXGoodsSpecCouponImageView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YXGoodsSpecCouponImageView.m; sourceTree = "<group>"; };
+		C008CD152049100900DDA4C0 /* NSObject+Safe.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+Safe.h"; sourceTree = "<group>"; };
+		C008CD162049100900DDA4C0 /* NSObject+Safe.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Safe.m"; sourceTree = "<group>"; };
+		C008CD1B20491F4200DDA4C0 /* YXGoodsSpecServiceDotView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YXGoodsSpecServiceDotView.h; sourceTree = "<group>"; };
+		C008CD1C20491F4200DDA4C0 /* YXGoodsSpecServiceDotView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YXGoodsSpecServiceDotView.m; sourceTree = "<group>"; };
+		C008CD1E20491F7A00DDA4C0 /* YXGoodsSpecServicePolicyView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YXGoodsSpecServicePolicyView.h; sourceTree = "<group>"; };
+		C008CD1F20491F7A00DDA4C0 /* YXGoodsSpecServicePolicyView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YXGoodsSpecServicePolicyView.m; sourceTree = "<group>"; };
+		C008CD212049278600DDA4C0 /* YXGoodsSpecServiceDotCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YXGoodsSpecServiceDotCell.h; sourceTree = "<group>"; };
+		C008CD222049278600DDA4C0 /* YXGoodsSpecServiceDotCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YXGoodsSpecServiceDotCell.m; sourceTree = "<group>"; };
+		C008CD272049464900DDA4C0 /* YXGoodsSpecServicePolicyLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YXGoodsSpecServicePolicyLayout.h; sourceTree = "<group>"; };
+		C008CD282049464900DDA4C0 /* YXGoodsSpecServicePolicyLayout.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YXGoodsSpecServicePolicyLayout.m; sourceTree = "<group>"; };
+		C02CF335204CFEB40019DCDC /* UIViewController+AdjustView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+AdjustView.h"; sourceTree = "<group>"; };
+		C02CF336204CFEB40019DCDC /* UIViewController+AdjustView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+AdjustView.m"; sourceTree = "<group>"; };
+		C05A4A18204D4EE500DC1268 /* UIView+AddSubViews.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+AddSubViews.h"; sourceTree = "<group>"; };
+		C05A4A19204D4EE500DC1268 /* UIView+AddSubViews.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+AddSubViews.m"; sourceTree = "<group>"; };
+		C05A4A1E204E306A00DC1268 /* YXGoodsSpecDragToIntroductionView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YXGoodsSpecDragToIntroductionView.h; sourceTree = "<group>"; };
+		C05A4A1F204E306A00DC1268 /* YXGoodsSpecDragToIntroductionView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YXGoodsSpecDragToIntroductionView.m; sourceTree = "<group>"; };
+		C05A4A21204E4EFF00DC1268 /* YXGoodsSpecHeaderFooterView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YXGoodsSpecHeaderFooterView.h; sourceTree = "<group>"; };
+		C05A4A22204E4EFF00DC1268 /* YXGoodsSpecHeaderFooterView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YXGoodsSpecHeaderFooterView.m; sourceTree = "<group>"; };
+		C05A4A27204FBCE200DC1268 /* YXGoodsViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YXGoodsViewModel.h; sourceTree = "<group>"; };
+		C05A4A28204FBCE200DC1268 /* YXGoodsViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YXGoodsViewModel.m; sourceTree = "<group>"; };
+		C638F2C02A2886D1F0493D9F /* libPods-yanxuanTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-yanxuanTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE17005CCEBD1298E329BBBD /* Pods-yanxuan.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-yanxuan.release.xcconfig"; path = "Pods/Target Support Files/Pods-yanxuan/Pods-yanxuan.release.xcconfig"; sourceTree = "<group>"; };
+		DED947744B677CE91FAD3AE1 /* Pods-yanxuan.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-yanxuan.debug.xcconfig"; path = "Pods/Target Support Files/Pods-yanxuan/Pods-yanxuan.debug.xcconfig"; sourceTree = "<group>"; };
+		E50F7C57EA27797946C90008 /* libPods-yanxuan.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-yanxuan.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C008CB1A20452E0D00DDA4C0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				23F33EBF4BCB0A9A1AB0795E /* libPods-yanxuan.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C008CB3220452E0D00DDA4C0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ABD13E86A7542FB4C96D0A95 /* libPods-yanxuanTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C008CB3D20452E0D00DDA4C0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DCAF07A6E0DAEA0EBA611394 /* libPods-yanxuanUITests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		245B9723204C2A0000D8D949 /* HTSegmentsView */ = {
+			isa = PBXGroup;
+			children = (
+				245B972E204C2B2100D8D949 /* ColorUtils.h */,
+				245B972D204C2B2100D8D949 /* ColorUtils.m */,
+				245B9724204C2A0000D8D949 /* HTSegmentsCellView.h */,
+				245B9725204C2A0000D8D949 /* HTSegmentsCellView.m */,
+				245B9726204C2A0000D8D949 /* HTSegmentsView.h */,
+				245B9727204C2A0000D8D949 /* HTSegmentsView.m */,
+				245B9728204C2A0000D8D949 /* HTSegmentsViewAnimator.h */,
+				245B9729204C2A0000D8D949 /* HTSegmentsViewAnimator.m */,
+			);
+			path = HTSegmentsView;
+			sourceTree = "<group>";
+		};
+		83631537B4DA9C045CB1C50C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DED947744B677CE91FAD3AE1 /* Pods-yanxuan.debug.xcconfig */,
+				CE17005CCEBD1298E329BBBD /* Pods-yanxuan.release.xcconfig */,
+				4CF8BED2F428803C6E98B2E2 /* Pods-yanxuanTests.debug.xcconfig */,
+				5CD9B97A78E8EFE775F379CA /* Pods-yanxuanTests.release.xcconfig */,
+				7DDAA831624D82CD9BC5B455 /* Pods-yanxuanUITests.debug.xcconfig */,
+				0B29D425EE26A1143A17607F /* Pods-yanxuanUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		8B2DDE8FE889CDF05C69D56C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C008CC382046C74800DDA4C0 /* WebP.framework */,
+				C008CC392046C74900DDA4C0 /* WebPDecoder.framework */,
+				E50F7C57EA27797946C90008 /* libPods-yanxuan.a */,
+				C638F2C02A2886D1F0493D9F /* libPods-yanxuanTests.a */,
+				531240D8FB726D0A392B2F62 /* libPods-yanxuanUITests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C008CB1420452E0D00DDA4C0 = {
+			isa = PBXGroup;
+			children = (
+				C008CB1F20452E0D00DDA4C0 /* yanxuan */,
+				C008CB3820452E0D00DDA4C0 /* yanxuanTests */,
+				C008CB4320452E0D00DDA4C0 /* yanxuanUITests */,
+				C008CB1E20452E0D00DDA4C0 /* Products */,
+				83631537B4DA9C045CB1C50C /* Pods */,
+				8B2DDE8FE889CDF05C69D56C /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		C008CB1E20452E0D00DDA4C0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C008CB1D20452E0D00DDA4C0 /* yanxuan.app */,
+				C008CB3520452E0D00DDA4C0 /* yanxuanTests.xctest */,
+				C008CB4020452E0D00DDA4C0 /* yanxuanUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C008CB1F20452E0D00DDA4C0 /* yanxuan */ = {
+			isa = PBXGroup;
+			children = (
+				C008CB2020452E0D00DDA4C0 /* AppDelegate.h */,
+				C008CB2120452E0D00DDA4C0 /* AppDelegate.m */,
+				C008CB952045560500DDA4C0 /* Other */,
+				C008CC3C2046C7AF00DDA4C0 /* Vendor */,
+				C008CB8420454D9600DDA4C0 /* Base */,
+				C008CB55204532D400DDA4C0 /* Main */,
+				C008CB65204533BC00DDA4C0 /* Yanxuan */,
+				C008CC2820469CE600DDA4C0 /* Resource */,
+				C008CB2920452E0D00DDA4C0 /* Assets.xcassets */,
+				C008CB2620452E0D00DDA4C0 /* Main.storyboard */,
+				C008CB2B20452E0D00DDA4C0 /* LaunchScreen.storyboard */,
+				C008CB2E20452E0D00DDA4C0 /* Info.plist */,
+				C008CB2F20452E0D00DDA4C0 /* main.m */,
+			);
+			path = yanxuan;
+			sourceTree = "<group>";
+		};
+		C008CB3820452E0D00DDA4C0 /* yanxuanTests */ = {
+			isa = PBXGroup;
+			children = (
+				C008CB3920452E0D00DDA4C0 /* yanxuanTests.m */,
+				C008CB3B20452E0D00DDA4C0 /* Info.plist */,
+			);
+			path = yanxuanTests;
+			sourceTree = "<group>";
+		};
+		C008CB4320452E0D00DDA4C0 /* yanxuanUITests */ = {
+			isa = PBXGroup;
+			children = (
+				C008CB4420452E0D00DDA4C0 /* yanxuanUITests.m */,
+				C008CB4620452E0D00DDA4C0 /* Info.plist */,
+			);
+			path = yanxuanUITests;
+			sourceTree = "<group>";
+		};
+		C008CB55204532D400DDA4C0 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				C008CB56204532D400DDA4C0 /* Controller */,
+				C008CB59204532D400DDA4C0 /* Model */,
+				C008CB5C204532D400DDA4C0 /* View */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		C008CB56204532D400DDA4C0 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				C008CB622045332D00DDA4C0 /* HomeViewController.h */,
+				C008CB632045332D00DDA4C0 /* HomeViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		C008CB59204532D400DDA4C0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C008CB5A204532D400DDA4C0 /* ListModel.h */,
+				C008CB5B204532D400DDA4C0 /* ListModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C008CB5C204532D400DDA4C0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C008CB65204533BC00DDA4C0 /* Yanxuan */ = {
+			isa = PBXGroup;
+			children = (
+				C008CB66204533BC00DDA4C0 /* Controller */,
+				C008CC2F20469D1A00DDA4C0 /* ViewModel */,
+				C008CB67204533BC00DDA4C0 /* Model */,
+				C008CB68204533BC00DDA4C0 /* View */,
+			);
+			path = Yanxuan;
+			sourceTree = "<group>";
+		};
+		C008CB66204533BC00DDA4C0 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				C008CB7B204543D200DDA4C0 /* YXGoodsViewController.h */,
+				C008CB7C204543D200DDA4C0 /* YXGoodsViewController.m */,
+				C008CB7E2045444B00DDA4C0 /* YXGoodsSpecViewController.h */,
+				C008CB7F2045444B00DDA4C0 /* YXGoodsSpecViewController.m */,
+				C008CB812045446200DDA4C0 /* YXGoodsDetailViewController.h */,
+				C008CB822045446200DDA4C0 /* YXGoodsDetailViewController.m */,
+				C008CC0B2046801100DDA4C0 /* YXGoodsEvaluationViewController.h */,
+				C008CC0C2046801100DDA4C0 /* YXGoodsEvaluationViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		C008CB67204533BC00DDA4C0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C008CCB920478C4900DDA4C0 /* YXGoodsSpecBaseModel.h */,
+				C008CCBA20478C4900DDA4C0 /* YXGoodsSpecBaseModel.m */,
+				C008CCBF20478D1800DDA4C0 /* YXGoodsSpecBannerModel.h */,
+				C008CCC020478D1800DDA4C0 /* YXGoodsSpecBannerModel.m */,
+				C008CCC220478D9200DDA4C0 /* YXGoodsSpecFeatureModel.h */,
+				C008CCC320478D9200DDA4C0 /* YXGoodsSpecFeatureModel.m */,
+				C008CCC520478DBA00DDA4C0 /* YXGoodsSpecDescriptModel.h */,
+				C008CCC620478DBA00DDA4C0 /* YXGoodsSpecDescriptModel.m */,
+				C008CCC820478DDA00DDA4C0 /* YXGoodsSpecSpecModel.h */,
+				C008CCC920478DDA00DDA4C0 /* YXGoodsSpecSpecModel.m */,
+				C008CCCB20478DF400DDA4C0 /* YXGoodsSpecCouponModel.h */,
+				C008CCCC20478DF400DDA4C0 /* YXGoodsSpecCouponModel.m */,
+				C008CCCE20478E0F00DDA4C0 /* YXGoodsSpecIntegralModel.h */,
+				C008CCCF20478E0F00DDA4C0 /* YXGoodsSpecIntegralModel.m */,
+				C008CCD120478E1F00DDA4C0 /* YXGoodsSpecServicePolicyModel.h */,
+				C008CCD220478E1F00DDA4C0 /* YXGoodsSpecServicePolicyModel.m */,
+				C008CCD420478E3800DDA4C0 /* YXGoodsSpecHotCommentMenuModel.h */,
+				C008CCD520478E3800DDA4C0 /* YXGoodsSpecHotCommentMenuModel.m */,
+				C008CCD720478E5100DDA4C0 /* YXGoodsSpecHotCommentModel.h */,
+				C008CCD820478E5100DDA4C0 /* YXGoodsSpecHotCommentModel.m */,
+				C008CCDA20478E6500DDA4C0 /* YXGoodsSpecRecommedationModel.h */,
+				C008CCDB20478E6500DDA4C0 /* YXGoodsSpecRecommedationModel.m */,
+				245B9720204C101600D8D949 /* YXGoodsSpecRecommedationItemTagModel.h */,
+				245B9721204C101600D8D949 /* YXGoodsSpecRecommedationItemTagModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C008CB68204533BC00DDA4C0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C008CB6C20453C7000DDA4C0 /* YXSegmentedControl.h */,
+				C008CB6D20453C7000DDA4C0 /* YXSegmentedControl.m */,
+				C008CBA42046457300DDA4C0 /* YXGoodsDetailOperationBar.h */,
+				C008CBA52046457300DDA4C0 /* YXGoodsDetailOperationBar.m */,
+				C008CBA72046540E00DDA4C0 /* YXGoodsNavigationButton.h */,
+				C008CBA82046540E00DDA4C0 /* YXGoodsNavigationButton.m */,
+				C008CBAA2046584100DDA4C0 /* YXGoodsBackToTopButton.h */,
+				C008CBAB2046584100DDA4C0 /* YXGoodsBackToTopButton.m */,
+				C008CCAD2046CDD600DDA4C0 /* YXGoodsBannerScrollView.h */,
+				C008CCAE2046CDD600DDA4C0 /* YXGoodsBannerScrollView.m */,
+				C008CCFA2047E80B00DDA4C0 /* YXGoodsBannerCellIdxLabel.h */,
+				C008CCFB2047E80B00DDA4C0 /* YXGoodsBannerCellIdxLabel.m */,
+				C008CCFD2047F1D100DDA4C0 /* YXGoodsBannerScaleImageView.h */,
+				C008CCFE2047F1D100DDA4C0 /* YXGoodsBannerScaleImageView.m */,
+				C008CD032048128A00DDA4C0 /* YXGoodsSpecFeatureCellView.h */,
+				C008CD042048128A00DDA4C0 /* YXGoodsSpecFeatureCellView.m */,
+				245B970120483C7B00D8D949 /* YXGoodsSpecDescriptRightView.h */,
+				245B970220483C7B00D8D949 /* YXGoodsSpecDescriptRightView.m */,
+				C008CD122049085100DDA4C0 /* YXGoodsSpecCouponImageView.h */,
+				C008CD132049085100DDA4C0 /* YXGoodsSpecCouponImageView.m */,
+				C008CD1B20491F4200DDA4C0 /* YXGoodsSpecServiceDotView.h */,
+				C008CD1C20491F4200DDA4C0 /* YXGoodsSpecServiceDotView.m */,
+				C008CD1E20491F7A00DDA4C0 /* YXGoodsSpecServicePolicyView.h */,
+				C008CD1F20491F7A00DDA4C0 /* YXGoodsSpecServicePolicyView.m */,
+				C008CD272049464900DDA4C0 /* YXGoodsSpecServicePolicyLayout.h */,
+				C008CD282049464900DDA4C0 /* YXGoodsSpecServicePolicyLayout.m */,
+				245B9708204AD16B00D8D949 /* YXGoodsSpecCommentStarLevelView.h */,
+				245B9709204AD16B00D8D949 /* YXGoodsSpecCommentStarLevelView.m */,
+				245B970B204AD18C00D8D949 /* YXGoodsSpecCommentImagesView.h */,
+				245B970C204AD18C00D8D949 /* YXGoodsSpecCommentImagesView.m */,
+				245B9730204C31A600D8D949 /* YXGoodsSpecRecommedationSegmentsView.h */,
+				245B9731204C31A600D8D949 /* YXGoodsSpecRecommedationSegmentsView.m */,
+				245B9733204C3CA600D8D949 /* YXGoodsSpecRecommedationGoodsView.h */,
+				245B9734204C3CA600D8D949 /* YXGoodsSpecRecommedationGoodsView.m */,
+				245B9739204C52BA00D8D949 /* YXGoodsSpecRecommedationGoodsStatusView.h */,
+				245B973A204C52BA00D8D949 /* YXGoodsSpecRecommedationGoodsStatusView.m */,
+				C05A4A1E204E306A00DC1268 /* YXGoodsSpecDragToIntroductionView.h */,
+				C05A4A1F204E306A00DC1268 /* YXGoodsSpecDragToIntroductionView.m */,
+				C008CBB620466B6200DDA4C0 /* Cell */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C008CB8420454D9600DDA4C0 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				C008CB8520454D9600DDA4C0 /* Controller */,
+				C008CB8820454D9600DDA4C0 /* Model */,
+				C008CB8920454D9600DDA4C0 /* View */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		C008CB8520454D9600DDA4C0 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				C008CB8620454D9600DDA4C0 /* BaseViewController.h */,
+				C008CB8720454D9600DDA4C0 /* BaseViewController.m */,
+				C008CB8B20454DB300DDA4C0 /* BaseNavigationViewController.h */,
+				C008CB8C20454DB300DDA4C0 /* BaseNavigationViewController.m */,
+				C008CB8E2045552C00DDA4C0 /* BaseTableViewCell.h */,
+				C008CB8F2045552C00DDA4C0 /* BaseTableViewCell.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		C008CB8820454D9600DDA4C0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C008CB8920454D9600DDA4C0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C008CB952045560500DDA4C0 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				C008CB962045561900DDA4C0 /* DefineFile.h */,
+				C008CC0E2046839100DDA4C0 /* HttpRequest.h */,
+				C008CC0F2046839100DDA4C0 /* HttpRequest.m */,
+				C008CB9720455F7300DDA4C0 /* Category */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		C008CB9720455F7300DDA4C0 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				245B96FE204836C100D8D949 /* NSObject+Common.h */,
+				245B96FF204836C100D8D949 /* NSObject+Common.m */,
+				245B9714204B0EAB00D8D949 /* UILabel+Common.h */,
+				245B9715204B0EAC00D8D949 /* UILabel+Common.m */,
+				C008CD152049100900DDA4C0 /* NSObject+Safe.h */,
+				C008CD162049100900DDA4C0 /* NSObject+Safe.m */,
+				C008CD092048DE5700DDA4C0 /* NSObject+Swizzle.h */,
+				C008CD0A2048DE5700DDA4C0 /* NSObject+Swizzle.m */,
+				245B970E204B075D00D8D949 /* NSDate+Convert.h */,
+				245B970F204B075D00D8D949 /* NSDate+Convert.m */,
+				C008CB9820455F7300DDA4C0 /* UIView+Common.h */,
+				C008CB9920455F7300DDA4C0 /* UIView+Common.m */,
+				C05A4A18204D4EE500DC1268 /* UIView+AddSubViews.h */,
+				C05A4A19204D4EE500DC1268 /* UIView+AddSubViews.m */,
+				C008CBA1204642E900DDA4C0 /* UIColor+Common.h */,
+				C008CBA2204642E900DDA4C0 /* UIColor+Common.m */,
+				C008CC2320469A6C00DDA4C0 /* NSDictionary+Common.h */,
+				C008CC2420469A6C00DDA4C0 /* NSDictionary+Common.m */,
+				C008CD0C2048F25800DDA4C0 /* UITableViewCell+Common.h */,
+				C008CD0D2048F25800DDA4C0 /* UITableViewCell+Common.m */,
+				C02CF335204CFEB40019DCDC /* UIViewController+AdjustView.h */,
+				C02CF336204CFEB40019DCDC /* UIViewController+AdjustView.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		C008CBB620466B6200DDA4C0 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				C008CCF42047D6E100DDA4C0 /* YXGoodsSpecBaseCell.h */,
+				C008CCF52047D6E100DDA4C0 /* YXGoodsSpecBaseCell.m */,
+				C05A4A21204E4EFF00DC1268 /* YXGoodsSpecHeaderFooterView.h */,
+				C05A4A22204E4EFF00DC1268 /* YXGoodsSpecHeaderFooterView.m */,
+				C008CBC620466BB500DDA4C0 /* YXGoodsSpecBannerTabCell.h */,
+				C008CBC720466BB500DDA4C0 /* YXGoodsSpecBannerTabCell.m */,
+				C008CBCC20466BE800DDA4C0 /* YXGoodsSpecFeatureTabCell.h */,
+				C008CBCD20466BE800DDA4C0 /* YXGoodsSpecFeatureTabCell.m */,
+				C008CBC920466BCD00DDA4C0 /* YXGoodsSpecDescriptTabCell.h */,
+				C008CBCA20466BCD00DDA4C0 /* YXGoodsSpecDescriptTabCell.m */,
+				C008CBCF20466C2C00DDA4C0 /* YXGoodsSpecSpecTabCell.h */,
+				C008CBD020466C2C00DDA4C0 /* YXGoodsSpecSpecTabCell.m */,
+				C008CBD220466C5500DDA4C0 /* YXGoodsSpecCouponTabCell.h */,
+				C008CBD320466C5500DDA4C0 /* YXGoodsSpecCouponTabCell.m */,
+				C008CBD520466CA000DDA4C0 /* YXGoodsSpecIntegralTabCell.h */,
+				C008CBD620466CA000DDA4C0 /* YXGoodsSpecIntegralTabCell.m */,
+				C008CBD820466CED00DDA4C0 /* YXGoodsSpecServicePolicyTabCell.h */,
+				C008CBD920466CED00DDA4C0 /* YXGoodsSpecServicePolicyTabCell.m */,
+				C008CD212049278600DDA4C0 /* YXGoodsSpecServiceDotCell.h */,
+				C008CD222049278600DDA4C0 /* YXGoodsSpecServiceDotCell.m */,
+				C008CBDB20466D2100DDA4C0 /* YXGoodsSpecHotCommentMenuTabCell.h */,
+				C008CBDC20466D2100DDA4C0 /* YXGoodsSpecHotCommentMenuTabCell.m */,
+				C008CBDE20466D3B00DDA4C0 /* YXGoodsSpecHotCommentTabCell.h */,
+				C008CBDF20466D3B00DDA4C0 /* YXGoodsSpecHotCommentTabCell.m */,
+				245B9717204BF13900D8D949 /* YXGoodsSpecHotCommentImageCell.h */,
+				245B9718204BF13900D8D949 /* YXGoodsSpecHotCommentImageCell.m */,
+				C008CBE120466FD100DDA4C0 /* YXGoodsSpecRecommendationTabCell.h */,
+				C008CBE220466FD100DDA4C0 /* YXGoodsSpecRecommendationTabCell.m */,
+				245B9736204C41DA00D8D949 /* YXGoodsSpecRecommendationGoodsCell.h */,
+				245B9737204C41DA00D8D949 /* YXGoodsSpecRecommendationGoodsCell.m */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		C008CC2820469CE600DDA4C0 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		C008CC2F20469D1A00DDA4C0 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				C05A4A27204FBCE200DC1268 /* YXGoodsViewModel.h */,
+				C008CC3020469E2F00DDA4C0 /* YXGoodsNavigationViewModel.h */,
+				C008CC3120469E2F00DDA4C0 /* YXGoodsNavigationViewModel.m */,
+				C008CCB020478A6B00DDA4C0 /* YXGoodsCellViewModel.h */,
+				C008CCB120478A6B00DDA4C0 /* YXGoodsCellViewModel.m */,
+				C008CD0020480FF000DDA4C0 /* YXGoodsSpecBaseViewModel.h */,
+				C008CD0120480FF000DDA4C0 /* YXGoodsSpecBaseViewModel.m */,
+				C05A4A28204FBCE200DC1268 /* YXGoodsViewModel.m */,
+				C008CC332046BA0600DDA4C0 /* YXGoodsSpecBannerViewModel.h */,
+				C008CC342046BA0600DDA4C0 /* YXGoodsSpecBannerViewModel.m */,
+				C008CCB320478BCB00DDA4C0 /* YXGoodsSpecFeatureViewModel.h */,
+				C008CCB420478BCB00DDA4C0 /* YXGoodsSpecFeatureViewModel.m */,
+				C008CCB620478BE200DDA4C0 /* YXGoodsSpecDescriptViewModel.h */,
+				C008CCB720478BE200DDA4C0 /* YXGoodsSpecDescriptViewModel.m */,
+				C008CCDD20478EC800DDA4C0 /* YXGoodsSpecSpecViewModel.h */,
+				C008CCDE20478EC800DDA4C0 /* YXGoodsSpecSpecViewModel.m */,
+				C008CCE020478EEF00DDA4C0 /* YXGoodsSpecCouponViewModel.h */,
+				C008CCE120478EEF00DDA4C0 /* YXGoodsSpecCouponViewModel.m */,
+				C008CCE320478F0300DDA4C0 /* YXGoodsSpecIntegralViewModel.h */,
+				C008CCE420478F0300DDA4C0 /* YXGoodsSpecIntegralViewModel.m */,
+				C008CCE620478F2300DDA4C0 /* YXGoodsSpecServicePolicyViewModel.h */,
+				C008CCE720478F2300DDA4C0 /* YXGoodsSpecServicePolicyViewModel.m */,
+				C008CCE920478F4600DDA4C0 /* YXGoodsSpecHotCommentMenuViewModel.h */,
+				C008CCEA20478F4600DDA4C0 /* YXGoodsSpecHotCommentMenuViewModel.m */,
+				C008CCEC20478F5A00DDA4C0 /* YXGoodsSpecHotCommentViewModel.h */,
+				C008CCED20478F5A00DDA4C0 /* YXGoodsSpecHotCommentViewModel.m */,
+				C008CCEF20478F6E00DDA4C0 /* YXGoodsSpecRecommedationViewModel.h */,
+				C008CCF020478F6E00DDA4C0 /* YXGoodsSpecRecommedationViewModel.m */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		C008CC3C2046C7AF00DDA4C0 /* Vendor */ = {
+			isa = PBXGroup;
+			children = (
+				245B9723204C2A0000D8D949 /* HTSegmentsView */,
+			);
+			path = Vendor;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C008CB1C20452E0D00DDA4C0 /* yanxuan */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C008CB4920452E0D00DDA4C0 /* Build configuration list for PBXNativeTarget "yanxuan" */;
+			buildPhases = (
+				F34C830F1954752B3AA392A9 /* [CP] Check Pods Manifest.lock */,
+				C008CB1920452E0D00DDA4C0 /* Sources */,
+				C008CB1A20452E0D00DDA4C0 /* Frameworks */,
+				C008CB1B20452E0D00DDA4C0 /* Resources */,
+				0650CF1671246C33314B76B4 /* [CP] Embed Pods Frameworks */,
+				353C7383BF2590F072C4B7AF /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = yanxuan;
+			productName = yanxuan;
+			productReference = C008CB1D20452E0D00DDA4C0 /* yanxuan.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C008CB3420452E0D00DDA4C0 /* yanxuanTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C008CB4C20452E0D00DDA4C0 /* Build configuration list for PBXNativeTarget "yanxuanTests" */;
+			buildPhases = (
+				A87C6B70ECAC822EEFFE6EA5 /* [CP] Check Pods Manifest.lock */,
+				C008CB3120452E0D00DDA4C0 /* Sources */,
+				C008CB3220452E0D00DDA4C0 /* Frameworks */,
+				C008CB3320452E0D00DDA4C0 /* Resources */,
+				5CB8B2B9140122448180474F /* [CP] Embed Pods Frameworks */,
+				4BB795168096512F4DC89D54 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C008CB3720452E0D00DDA4C0 /* PBXTargetDependency */,
+			);
+			name = yanxuanTests;
+			productName = yanxuanTests;
+			productReference = C008CB3520452E0D00DDA4C0 /* yanxuanTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C008CB3F20452E0D00DDA4C0 /* yanxuanUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C008CB4F20452E0D00DDA4C0 /* Build configuration list for PBXNativeTarget "yanxuanUITests" */;
+			buildPhases = (
+				5D9EA957394F2DBAC3411598 /* [CP] Check Pods Manifest.lock */,
+				C008CB3C20452E0D00DDA4C0 /* Sources */,
+				C008CB3D20452E0D00DDA4C0 /* Frameworks */,
+				C008CB3E20452E0D00DDA4C0 /* Resources */,
+				15A2555BF7B8F2EA42108853 /* [CP] Embed Pods Frameworks */,
+				00202A6BB99C26E34C7904AB /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C008CB4220452E0D00DDA4C0 /* PBXTargetDependency */,
+			);
+			name = yanxuanUITests;
+			productName = yanxuanUITests;
+			productReference = C008CB4020452E0D00DDA4C0 /* yanxuanUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C008CB1520452E0D00DDA4C0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = Hanson;
+				TargetAttributes = {
+					C008CB1C20452E0D00DDA4C0 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					C008CB3420452E0D00DDA4C0 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = C008CB1C20452E0D00DDA4C0;
+					};
+					C008CB3F20452E0D00DDA4C0 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = C008CB1C20452E0D00DDA4C0;
+					};
+				};
+			};
+			buildConfigurationList = C008CB1820452E0D00DDA4C0 /* Build configuration list for PBXProject "yanxuan" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C008CB1420452E0D00DDA4C0;
+			productRefGroup = C008CB1E20452E0D00DDA4C0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C008CB1C20452E0D00DDA4C0 /* yanxuan */,
+				C008CB3420452E0D00DDA4C0 /* yanxuanTests */,
+				C008CB3F20452E0D00DDA4C0 /* yanxuanUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C008CB1B20452E0D00DDA4C0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C008CB2D20452E0D00DDA4C0 /* LaunchScreen.storyboard in Resources */,
+				C008CB2A20452E0D00DDA4C0 /* Assets.xcassets in Resources */,
+				C008CB2820452E0D00DDA4C0 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C008CB3320452E0D00DDA4C0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C008CB3E20452E0D00DDA4C0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		00202A6BB99C26E34C7904AB /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-yanxuanUITests/Pods-yanxuanUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		0650CF1671246C33314B76B4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-yanxuan/Pods-yanxuan-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		15A2555BF7B8F2EA42108853 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-yanxuanUITests/Pods-yanxuanUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		353C7383BF2590F072C4B7AF /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-yanxuan/Pods-yanxuan-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4BB795168096512F4DC89D54 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-yanxuanTests/Pods-yanxuanTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5CB8B2B9140122448180474F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-yanxuanTests/Pods-yanxuanTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5D9EA957394F2DBAC3411598 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-yanxuanUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A87C6B70ECAC822EEFFE6EA5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-yanxuanTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F34C830F1954752B3AA392A9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-yanxuan-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C008CB1920452E0D00DDA4C0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				245B9735204C3CA600D8D949 /* YXGoodsSpecRecommedationGoodsView.m in Sources */,
+				245B972B204C2A0000D8D949 /* HTSegmentsView.m in Sources */,
+				245B973B204C52BA00D8D949 /* YXGoodsSpecRecommedationGoodsStatusView.m in Sources */,
+				C008CCD320478E1F00DDA4C0 /* YXGoodsSpecServicePolicyModel.m in Sources */,
+				C008CC0D2046801100DDA4C0 /* YXGoodsEvaluationViewController.m in Sources */,
+				C008CD292049464900DDA4C0 /* YXGoodsSpecServicePolicyLayout.m in Sources */,
+				245B9716204B0EAC00D8D949 /* UILabel+Common.m in Sources */,
+				C008CC352046BA0600DDA4C0 /* YXGoodsSpecBannerViewModel.m in Sources */,
+				C008CCBB20478C4900DDA4C0 /* YXGoodsSpecBaseModel.m in Sources */,
+				245B972F204C2B2100D8D949 /* ColorUtils.m in Sources */,
+				245B970D204AD18C00D8D949 /* YXGoodsSpecCommentImagesView.m in Sources */,
+				C008CB8A20454D9600DDA4C0 /* BaseViewController.m in Sources */,
+				C008CBDD20466D2100DDA4C0 /* YXGoodsSpecHotCommentMenuTabCell.m in Sources */,
+				C05A4A23204E4EFF00DC1268 /* YXGoodsSpecHeaderFooterView.m in Sources */,
+				C008CCFC2047E80B00DDA4C0 /* YXGoodsBannerCellIdxLabel.m in Sources */,
+				C008CD0B2048DE5700DDA4C0 /* NSObject+Swizzle.m in Sources */,
+				C008CBA92046540E00DDA4C0 /* YXGoodsNavigationButton.m in Sources */,
+				C008CD2020491F7A00DDA4C0 /* YXGoodsSpecServicePolicyView.m in Sources */,
+				C008CCB220478A6B00DDA4C0 /* YXGoodsCellViewModel.m in Sources */,
+				C02CF337204CFEB40019DCDC /* UIViewController+AdjustView.m in Sources */,
+				C008CCB520478BCB00DDA4C0 /* YXGoodsSpecFeatureViewModel.m in Sources */,
+				C008CB8D20454DB300DDA4C0 /* BaseNavigationViewController.m in Sources */,
+				C008CB3020452E0D00DDA4C0 /* main.m in Sources */,
+				C008CCF120478F6E00DDA4C0 /* YXGoodsSpecRecommedationViewModel.m in Sources */,
+				C008CCFF2047F1D100DDA4C0 /* YXGoodsBannerScaleImageView.m in Sources */,
+				C008CCE220478EEF00DDA4C0 /* YXGoodsSpecCouponViewModel.m in Sources */,
+				C008CBD720466CA000DDA4C0 /* YXGoodsSpecIntegralTabCell.m in Sources */,
+				245B972A204C2A0000D8D949 /* HTSegmentsCellView.m in Sources */,
+				C008CBCB20466BCD00DDA4C0 /* YXGoodsSpecDescriptTabCell.m in Sources */,
+				C008CB902045552C00DDA4C0 /* BaseTableViewCell.m in Sources */,
+				C05A4A29204FBCE200DC1268 /* YXGoodsViewModel.m in Sources */,
+				C008CCD620478E3800DDA4C0 /* YXGoodsSpecHotCommentMenuModel.m in Sources */,
+				C008CB2220452E0D00DDA4C0 /* AppDelegate.m in Sources */,
+				C008CD1D20491F4200DDA4C0 /* YXGoodsSpecServiceDotView.m in Sources */,
+				C05A4A1A204D4EE500DC1268 /* UIView+AddSubViews.m in Sources */,
+				C008CD232049278600DDA4C0 /* YXGoodsSpecServiceDotCell.m in Sources */,
+				C008CB6E20453C7000DDA4C0 /* YXSegmentedControl.m in Sources */,
+				C008CBE020466D3B00DDA4C0 /* YXGoodsSpecHotCommentTabCell.m in Sources */,
+				C008CB832045446200DDA4C0 /* YXGoodsDetailViewController.m in Sources */,
+				C008CD0220480FF000DDA4C0 /* YXGoodsSpecBaseViewModel.m in Sources */,
+				C008CCDF20478EC800DDA4C0 /* YXGoodsSpecSpecViewModel.m in Sources */,
+				C008CD0E2048F25800DDA4C0 /* UITableViewCell+Common.m in Sources */,
+				C008CB5E204532D400DDA4C0 /* ListModel.m in Sources */,
+				C008CCE520478F0300DDA4C0 /* YXGoodsSpecIntegralViewModel.m in Sources */,
+				245B9710204B075D00D8D949 /* NSDate+Convert.m in Sources */,
+				C008CBA3204642E900DDA4C0 /* UIColor+Common.m in Sources */,
+				C008CCD020478E0F00DDA4C0 /* YXGoodsSpecIntegralModel.m in Sources */,
+				C008CBCE20466BE800DDA4C0 /* YXGoodsSpecFeatureTabCell.m in Sources */,
+				245B972C204C2A0000D8D949 /* HTSegmentsViewAnimator.m in Sources */,
+				C008CBDA20466CED00DDA4C0 /* YXGoodsSpecServicePolicyTabCell.m in Sources */,
+				C008CCEE20478F5A00DDA4C0 /* YXGoodsSpecHotCommentViewModel.m in Sources */,
+				C008CC3220469E2F00DDA4C0 /* YXGoodsNavigationViewModel.m in Sources */,
+				C008CBE320466FD100DDA4C0 /* YXGoodsSpecRecommendationTabCell.m in Sources */,
+				C008CCC720478DBA00DDA4C0 /* YXGoodsSpecDescriptModel.m in Sources */,
+				C008CB9A20455F7300DDA4C0 /* UIView+Common.m in Sources */,
+				C008CCD920478E5100DDA4C0 /* YXGoodsSpecHotCommentModel.m in Sources */,
+				C008CD172049100900DDA4C0 /* NSObject+Safe.m in Sources */,
+				C008CCE820478F2300DDA4C0 /* YXGoodsSpecServicePolicyViewModel.m in Sources */,
+				C008CBC820466BB500DDA4C0 /* YXGoodsSpecBannerTabCell.m in Sources */,
+				C008CB802045444B00DDA4C0 /* YXGoodsSpecViewController.m in Sources */,
+				245B9722204C101600D8D949 /* YXGoodsSpecRecommedationItemTagModel.m in Sources */,
+				C008CCEB20478F4600DDA4C0 /* YXGoodsSpecHotCommentMenuViewModel.m in Sources */,
+				C008CD052048128A00DDA4C0 /* YXGoodsSpecFeatureCellView.m in Sources */,
+				245B970320483C7B00D8D949 /* YXGoodsSpecDescriptRightView.m in Sources */,
+				C008CBA62046457300DDA4C0 /* YXGoodsDetailOperationBar.m in Sources */,
+				C008CC2520469A6C00DDA4C0 /* NSDictionary+Common.m in Sources */,
+				C008CD142049085100DDA4C0 /* YXGoodsSpecCouponImageView.m in Sources */,
+				C008CCDC20478E6500DDA4C0 /* YXGoodsSpecRecommedationModel.m in Sources */,
+				C008CC102046839100DDA4C0 /* HttpRequest.m in Sources */,
+				C008CCAF2046CDD600DDA4C0 /* YXGoodsBannerScrollView.m in Sources */,
+				C008CB7D204543D200DDA4C0 /* YXGoodsViewController.m in Sources */,
+				C008CCC120478D1800DDA4C0 /* YXGoodsSpecBannerModel.m in Sources */,
+				C008CBD420466C5500DDA4C0 /* YXGoodsSpecCouponTabCell.m in Sources */,
+				C05A4A20204E306A00DC1268 /* YXGoodsSpecDragToIntroductionView.m in Sources */,
+				245B970A204AD16B00D8D949 /* YXGoodsSpecCommentStarLevelView.m in Sources */,
+				C008CCCD20478DF400DDA4C0 /* YXGoodsSpecCouponModel.m in Sources */,
+				245B9732204C31A600D8D949 /* YXGoodsSpecRecommedationSegmentsView.m in Sources */,
+				245B9719204BF13900D8D949 /* YXGoodsSpecHotCommentImageCell.m in Sources */,
+				C008CCC420478D9200DDA4C0 /* YXGoodsSpecFeatureModel.m in Sources */,
+				C008CCB820478BE200DDA4C0 /* YXGoodsSpecDescriptViewModel.m in Sources */,
+				245B9700204836C100D8D949 /* NSObject+Common.m in Sources */,
+				245B9738204C41DA00D8D949 /* YXGoodsSpecRecommendationGoodsCell.m in Sources */,
+				C008CCF62047D6E100DDA4C0 /* YXGoodsSpecBaseCell.m in Sources */,
+				C008CCCA20478DDA00DDA4C0 /* YXGoodsSpecSpecModel.m in Sources */,
+				C008CB642045332D00DDA4C0 /* HomeViewController.m in Sources */,
+				C008CBAC2046584100DDA4C0 /* YXGoodsBackToTopButton.m in Sources */,
+				C008CBD120466C2C00DDA4C0 /* YXGoodsSpecSpecTabCell.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C008CB3120452E0D00DDA4C0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C008CB3A20452E0D00DDA4C0 /* yanxuanTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C008CB3C20452E0D00DDA4C0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C008CB4520452E0D00DDA4C0 /* yanxuanUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C008CB3720452E0D00DDA4C0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C008CB1C20452E0D00DDA4C0 /* yanxuan */;
+			targetProxy = C008CB3620452E0D00DDA4C0 /* PBXContainerItemProxy */;
+		};
+		C008CB4220452E0D00DDA4C0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C008CB1C20452E0D00DDA4C0 /* yanxuan */;
+			targetProxy = C008CB4120452E0D00DDA4C0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C008CB2620452E0D00DDA4C0 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C008CB2720452E0D00DDA4C0 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C008CB2B20452E0D00DDA4C0 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C008CB2C20452E0D00DDA4C0 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C008CB4720452E0D00DDA4C0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		C008CB4820452E0D00DDA4C0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C008CB4A20452E0D00DDA4C0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DED947744B677CE91FAD3AE1 /* Pods-yanxuan.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8ENY487NC4;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/yanxuan/Resource",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"COCOAPODS=1",
+				);
+				INFOPLIST_FILE = yanxuan/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jiangxin.yanxuan;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C008CB4B20452E0D00DDA4C0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CE17005CCEBD1298E329BBBD /* Pods-yanxuan.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8ENY487NC4;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/yanxuan/Resource",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"COCOAPODS=1",
+				);
+				INFOPLIST_FILE = yanxuan/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jiangxin.yanxuan;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		C008CB4D20452E0D00DDA4C0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4CF8BED2F428803C6E98B2E2 /* Pods-yanxuanTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8ENY487NC4;
+				INFOPLIST_FILE = yanxuanTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jiangxin.yanxuanTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/yanxuan.app/yanxuan";
+			};
+			name = Debug;
+		};
+		C008CB4E20452E0D00DDA4C0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5CD9B97A78E8EFE775F379CA /* Pods-yanxuanTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8ENY487NC4;
+				INFOPLIST_FILE = yanxuanTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jiangxin.yanxuanTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/yanxuan.app/yanxuan";
+			};
+			name = Release;
+		};
+		C008CB5020452E0D00DDA4C0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7DDAA831624D82CD9BC5B455 /* Pods-yanxuanUITests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8ENY487NC4;
+				INFOPLIST_FILE = yanxuanUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jiangxin.yanxuanUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = yanxuan;
+			};
+			name = Debug;
+		};
+		C008CB5120452E0D00DDA4C0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0B29D425EE26A1143A17607F /* Pods-yanxuanUITests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8ENY487NC4;
+				INFOPLIST_FILE = yanxuanUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jiangxin.yanxuanUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = yanxuan;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C008CB1820452E0D00DDA4C0 /* Build configuration list for PBXProject "yanxuan" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C008CB4720452E0D00DDA4C0 /* Debug */,
+				C008CB4820452E0D00DDA4C0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C008CB4920452E0D00DDA4C0 /* Build configuration list for PBXNativeTarget "yanxuan" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C008CB4A20452E0D00DDA4C0 /* Debug */,
+				C008CB4B20452E0D00DDA4C0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C008CB4C20452E0D00DDA4C0 /* Build configuration list for PBXNativeTarget "yanxuanTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C008CB4D20452E0D00DDA4C0 /* Debug */,
+				C008CB4E20452E0D00DDA4C0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C008CB4F20452E0D00DDA4C0 /* Build configuration list for PBXNativeTarget "yanxuanUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C008CB5020452E0D00DDA4C0 /* Debug */,
+				C008CB5120452E0D00DDA4C0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C008CB1520452E0D00DDA4C0 /* Project object */;
+}
