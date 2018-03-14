@@ -17,6 +17,8 @@
 @property (nonatomic, strong) YXSegmentedControl *segmentedControl;
 /** <#name#> */
 @property (nonatomic, assign, getter=isEvaluation) BOOL evaluation;
+/** <#name#> */
+@property (nonatomic, assign, getter=isHasReport) BOOL hasReport;
 
 /** <#注释#> */
 @property (nonatomic, copy) void(^didClickSegmentedControlBlock) (NSUInteger idx);

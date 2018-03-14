@@ -27,6 +27,9 @@
     superController.navigationItem.rightBarButtonItems = @[[[UIBarButtonItem alloc] initWithCustomView:homeButton],[[UIBarButtonItem alloc] initWithCustomView:shareButton]];
     
     _segmentedControl = [[YXSegmentedControl alloc] initWithItems:@[@"商品",@"详情",@"测评"]];
+    if (!_hasReport) {
+        [_segmentedControl removeSegmentAtIndex:2 animated:NO];
+    }
     LSWeakSelf(self);
     [_segmentedControl setDidClickSegmentedControlBlock:^(NSUInteger idx) {
         !weakself.didClickSegmentedControlBlock?:weakself.didClickSegmentedControlBlock(idx);

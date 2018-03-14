@@ -16,7 +16,9 @@
 #import "YXGoodsDetailOperationBar.h"
 #import "YXGoodsNavigationButton.h"
 #import "YXGoodsBackToTopButton.h"
+#import "YXLoadingView.h"
 
+#import "YXGoodsViewModel.h"
 #import "YXGoodsNavigationViewModel.h"
 
 @interface YXGoodsViewController ()<UIGestureRecognizerDelegate,UIScrollViewDelegate>
@@ -38,6 +40,8 @@
 @property (nonatomic, weak) UIView *evaluationView;
 /** <#注释#> */
 @property (nonatomic, assign) CFRunLoopObserverRef runloopObserverBeforeWaiting;
+/** <#name#> */
+@property (nonatomic, assign, getter=isHasReport) BOOL hasReport;
 
 
 @end
@@ -51,12 +55,12 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    [YXLoadingView addToView:[UIApplication sharedApplication].keyWindow];
     [self settingBaseUrl];
     [self settingBaseInformation];
-    [self settingNavigationBar];
+    [self loadData];
     [self settingScrollView];
     [self addAdjustView];
-    [self settingSubViewController];
     [self settingGoodsBackToTopButton];
     [self settingGoodsDetailOperationBar];
     // Do any additional setup after loading the view.
@@ -75,8 +79,16 @@
 #pragma mark - private methods
 
 -(void)loadData{
-    
-    
+    LSWeakSelf(self);
+    YXGoodsViewModel *goodsViewModel = [[YXGoodsViewModel alloc] init];
+    [goodsViewModel loadTryOutEventReportDataWithId:_goods_id finishBlock:^(BOOL hasReportData) {
+        
+        weakself.hasReport = hasReportData;
+        NSLog(@"hasReportData = %zd",hasReportData);
+        
+        [weakself settingNavigationBar];
+        [weakself settingSubViewController];
+    }];
 }
 
 -(void)loadGoodsWebView{
@@ -210,7 +222,7 @@
 -(void)settingNavigationBar{
     
     _goodsNavigationViewModel = [[YXGoodsNavigationViewModel alloc] init];
-    
+    _goodsNavigationViewModel.hasReport = self.isHasReport;
     LSWeakSelf(self);
     [_goodsNavigationViewModel setDidClickSegmentedControlBlock:^(NSUInteger idx) {
         
@@ -279,7 +291,9 @@
     }];
     
     [self createDetailViewContrllerWithType:kYXGoodsDetailViewControllerTypeDetail];
-    [self createDetailViewContrllerWithType:kYXGoodsDetailViewControllerTypeEvaluation];
+    if (self.isHasReport) {
+        [self createDetailViewContrllerWithType:kYXGoodsDetailViewControllerTypeEvaluation];
+    }
     
 }
 

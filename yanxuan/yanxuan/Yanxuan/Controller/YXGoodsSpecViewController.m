@@ -7,8 +7,8 @@
 //
 
 #import "YXGoodsSpecViewController.h"
-#import "YXGoodsViewModel.h"
 
+#import "YXGoodsViewModel.h"
 #import "YXGoodsCellViewModel.h"
 
 #import "YXGoodsSpecBannerTabCell.h"
@@ -23,6 +23,8 @@
 #import "YXGoodsSpecRecommendationTabCell.h"
 #import "YXGoodsSpecDragToIntroductionView.h"
 
+#import "YXLoadingView.h"
+
 @interface YXGoodsSpecViewController ()<UITableViewDelegate,UITableViewDataSource,UIScrollViewDelegate>
 
 /** <#注释#> */
@@ -31,8 +33,6 @@
 @property (nonatomic, strong) YXGoodsCellViewModel *goodsCellViewModel;
 /** <#注释#> */
 @property (nonatomic, weak) YXGoodsSpecDragToIntroductionView *dragToIntroductionView;
-/** <#注释#> */
-@property (nonatomic, strong) UIActivityIndicatorView *activityIndicatorView;
 
 @end
 
@@ -70,10 +70,7 @@ static const float scrollDistance = 50;
     
     [kNotificationCenter addObserver:self selector:@selector(GoodsSpecBackToTop) name:nYXGoodsBackToTop object:nil];
     
-    _activityIndicatorView = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleGray];
-    _activityIndicatorView.center = CGPointMake(self.view.center.x, self.view.center.y - kNavgationHeight - kStatusBarHeight);
-    [_activityIndicatorView startAnimating];
-    [self.view addSubview:_activityIndicatorView];
+    
 }
 
 -(void)settingTableView{
@@ -84,7 +81,7 @@ static const float scrollDistance = 50;
     _tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
     _tableView.backgroundColor = [UIColor whiteColor];
     _tableView.showsVerticalScrollIndicator = NO;
-    [self.view insertSubview:_tableView belowSubview:_activityIndicatorView];
+    [self.view addSubview:_tableView];
     //tag 10086 轮播图
     //tag 10087 规格选取
 }
@@ -103,17 +100,16 @@ static const float scrollDistance = 50;
 }
 
 -(void)loadData{
+    
     LSWeakSelf(self);
     YXGoodsViewModel *goodsViewModel = [[YXGoodsViewModel alloc] init];
     [goodsViewModel loadDataWithId:_goods_id finishBlock:^(NSArray *dataList) {
         weakself.dataSource = [dataList mutableCopy];
         
         [weakself.tableView reloadData];
-        [weakself.activityIndicatorView stopAnimating];
         weakself.loadDataFinishBlock();
+        [YXLoadingView hiddenForView:[UIApplication sharedApplication].keyWindow];
     }];
-    
-    
 }
 
 -(YXGoodsSpecBaseCell *)configCellWithTableView:(UITableView *)tableView indexPath:(NSIndexPath *)indexPath

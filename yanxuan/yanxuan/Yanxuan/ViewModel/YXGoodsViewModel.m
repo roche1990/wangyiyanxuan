@@ -45,6 +45,46 @@
 
 @implementation YXGoodsViewModel
 
+
+-(void)loadTryOutEventReportDataWithId:(NSInteger )goods_id finishBlock:(loadReportDataSuccess)finishBlock{
+    
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+        
+        NSString *urlString = [BASE_URL stringByAppendingFormat:@"/item/detail?id=%zd",goods_id];
+        
+        NSData *data= [NSData dataWithContentsOfURL:[NSURL URLWithString:urlString]];
+        
+        dispatch_async(dispatch_get_main_queue(), ^{
+            
+            NSError *error;
+            ONOXMLDocument *doc=[ONOXMLDocument HTMLDocumentWithData:data error:&error];
+            ONOXMLElement *postsParentElement= [doc firstChildWithXPath:@"/html/body"]; //寻找该 XPath 代表的 HTML 节点,
+            [postsParentElement.children enumerateObjectsUsingBlock:^(ONOXMLElement *element, NSUInteger idx, BOOL * _Nonnull stop) {
+                
+                if (idx == 27) {
+                    
+                    NSString *json = [[element stringValue] stringByReplacingOccurrencesOfString:@"var jsonData=" withString:@""];
+                    
+                    NSRange range = [json rangeOfString:@"policyList="];
+                    
+                    json = [json substringWithRange:NSMakeRange(0, range.location - 2)];
+                    
+                    NSDictionary *result = [NSJSONSerialization JSONObjectWithData:[json dataUsingEncoding:NSUTF8StringEncoding] options:kNilOptions error:nil];
+                    
+                    NSDictionary *dict = [NSObject getSafeDictionary:[result objectForKey:@"tryOutEventReport"]];
+                    
+                    if ([dict count]) {
+                        finishBlock(YES);
+                    } else {
+                        finishBlock(NO);
+                    }
+                }
+                }];
+            });
+         });
+}
+
+
 -(void)loadDataWithId:(NSInteger )goods_id finishBlock:(loadGoodsDataSuccess)finishBlock{
     
     _loadFinishNum = 0;
@@ -78,6 +118,7 @@
                     json = [json substringWithRange:NSMakeRange(0, range.location - 2)];
                     
                     NSDictionary *result = [NSJSONSerialization JSONObjectWithData:[json dataUsingEncoding:NSUTF8StringEncoding] options:kNilOptions error:nil];
+                    
                     NSArray *policyList = [NSJSONSerialization JSONObjectWithData:[policyListJson dataUsingEncoding:NSUTF8StringEncoding] options:NSJSONReadingAllowFragments error:nil];
                     
                     _goodsPolicyListDictionary = [NSDictionary dictionaryWithObject:policyList forKey:@"policyList"];

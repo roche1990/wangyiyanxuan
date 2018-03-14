@@ -25,10 +25,12 @@
 #import "YXGoodsSpecHeaderFooterView.h"
 
 typedef void (^loadGoodsDataSuccess)(NSArray *dataList);
+typedef void (^loadReportDataSuccess)(BOOL hasReportData);
 
 @interface YXGoodsViewModel : NSObject
 
 -(void)loadDataWithId:(NSInteger )goods_id finishBlock:(loadGoodsDataSuccess)finishBlock;
+-(void)loadTryOutEventReportDataWithId:(NSInteger )goods_id finishBlock:(loadReportDataSuccess)finishBlock;
 
 @end
 

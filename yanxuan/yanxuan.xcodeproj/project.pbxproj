@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		23F33EBF4BCB0A9A1AB0795E /* libPods-yanxuan.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E50F7C57EA27797946C90008 /* libPods-yanxuan.a */; };
+		242EA50F2059816E00168632 /* YXLoadingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 242EA50E2059816E00168632 /* YXLoadingView.m */; };
 		245B9700204836C100D8D949 /* NSObject+Common.m in Sources */ = {isa = PBXBuildFile; fileRef = 245B96FF204836C100D8D949 /* NSObject+Common.m */; };
 		245B970320483C7B00D8D949 /* YXGoodsSpecDescriptRightView.m in Sources */ = {isa = PBXBuildFile; fileRef = 245B970220483C7B00D8D949 /* YXGoodsSpecDescriptRightView.m */; };
 		245B970A204AD16B00D8D949 /* YXGoodsSpecCommentStarLevelView.m in Sources */ = {isa = PBXBuildFile; fileRef = 245B9709204AD16B00D8D949 /* YXGoodsSpecCommentStarLevelView.m */; };
@@ -123,6 +124,8 @@
 
 /* Begin PBXFileReference section */
 		0B29D425EE26A1143A17607F /* Pods-yanxuanUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-yanxuanUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-yanxuanUITests/Pods-yanxuanUITests.release.xcconfig"; sourceTree = "<group>"; };
+		242EA50D2059816E00168632 /* YXLoadingView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YXLoadingView.h; sourceTree = "<group>"; };
+		242EA50E2059816E00168632 /* YXLoadingView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YXLoadingView.m; sourceTree = "<group>"; };
 		245B96FE204836C100D8D949 /* NSObject+Common.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+Common.h"; sourceTree = "<group>"; };
 		245B96FF204836C100D8D949 /* NSObject+Common.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Common.m"; sourceTree = "<group>"; };
 		245B970120483C7B00D8D949 /* YXGoodsSpecDescriptRightView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YXGoodsSpecDescriptRightView.h; sourceTree = "<group>"; };
@@ -619,6 +622,8 @@
 		C008CB8920454D9600DDA4C0 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				242EA50D2059816E00168632 /* YXLoadingView.h */,
+				242EA50E2059816E00168632 /* YXLoadingView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -1061,6 +1066,7 @@
 				C008CD2020491F7A00DDA4C0 /* YXGoodsSpecServicePolicyView.m in Sources */,
 				C008CCB220478A6B00DDA4C0 /* YXGoodsCellViewModel.m in Sources */,
 				C02CF337204CFEB40019DCDC /* UIViewController+AdjustView.m in Sources */,
+				242EA50F2059816E00168632 /* YXLoadingView.m in Sources */,
 				C008CCB520478BCB00DDA4C0 /* YXGoodsSpecFeatureViewModel.m in Sources */,
 				C008CB8D20454DB300DDA4C0 /* BaseNavigationViewController.m in Sources */,
 				C008CB3020452E0D00DDA4C0 /* main.m in Sources */,
