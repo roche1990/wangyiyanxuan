@@ -10,7 +10,7 @@
 #define DefineFile_h
 
 #define kBASE_URL @"BASE_url"
-#define mBASE_URL @"https://m.mongfriends.com"
+#define mBASE_URL @"https://m.you.163.com"
 #define BASE_URL [[NSUserDefaults standardUserDefaults] objectForKey:kBASE_URL]
 
 #define kUserDefaults [NSUserDefaults standardUserDefaults]
