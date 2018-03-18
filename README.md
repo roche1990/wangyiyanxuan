@@ -3,7 +3,7 @@
 
 >##### **简**
 
-这个项目主要是用采用Objective-C高仿严选，毕竟网易出品的应用都是竟精品。之前的项目采用Objective-C跟swift混编，以后准备全心投入swift。这个项目会一直迭代，保持Objective-C不要太生疏。
+这个项目主要是用采用Objective-C高仿严选，毕竟网易出品的应用都是精品。之前的项目采用Objective-C跟swift混编，以后准备全心投入swift。这个项目会一直迭代，保持Objective-C不要太生疏。
 
 -------
 
