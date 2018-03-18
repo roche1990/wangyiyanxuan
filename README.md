@@ -1,11 +1,13 @@
 # 高仿严选
->##### **简介**
 
-这个项目主要是用采用Objective-C高仿严选，毕竟网易出品的应用都是竟精品。之前的项目主要是采用Objective-C跟swift混编，以后准备全心投入swift，这个项目会一直迭代，也算是不要保持Objective-C不要太生疏。
+
+>##### **简**
+
+这个项目主要是用采用Objective-C高仿严选，毕竟网易出品的应用都是竟精品。之前的项目采用Objective-C跟swift混编，以后准备全心投入swift。这个项目会一直迭代，保持Objective-C不要太生疏。
 
 -------
 
->##### **项目点**
+>##### **点**
 
 * 页面任意组合布局
 * 商品图片下拉缩放
@@ -20,11 +22,13 @@
 
 -------
 
->##### **页面**
+>##### **页**
 
-图片链接：http://wx3.sinaimg.cn/large/64c125d7gy1fpguvpdpqbg20eh0shb2r.gif
+![screenshot](http://r.photo.store.qq.com/psb?/V12RuddS4X20zt/MTJIH.HE.ogrMbUvj.mBOKMBRuTYfyq2X8K7LeynTvs!/r/dAgBAAAAAAAA)  ![screenshot](http://r.photo.store.qq.com/psb?/V12RuddS4X20zt/YwrJv0fnN.Lk79Wejt9HhLt.ljL0FCOZ23VlvHkHxiU!/r/dGcBAAAAAAAA) ![screenshot](http://r.photo.store.qq.com/psb?/V12RuddS4X20zt/uuAPTFZshI8nw19rlGTrdr77CwuUWfG*ifEFz6eNloM!/r/dGgBAAAAAAAA)
 
-![screenshot](http://wx3.sinaimg.cn/large/64c125d7gy1fpguvpdpqbg20eh0shb2r.gif)
+**动图链接：**`http://wx2.sinaimg.cn/large/64c125d7gy1fpgwgf58fcg20a00jnhe0.gif`
+
+![screenshot](http://wx2.sinaimg.cn/large/64c125d7gy1fpgwgf58fcg20a00jnhe0.gif) 
 
 -------
 
@@ -37,7 +41,9 @@
 
 -------
 
-**注：** 如果报以下错误，可删除 Build Phases 中 Embed Pods Frameworks 以及Copy Pods Resources 中的文件路径 解决
-`Pods/Target Support Files/Pods-yanxuan/Pods-yanxuan-frameworks.sh: Permission denied`
+>##### **注** 
 
+* Pods/Target Support Files/Pods-yanxuan/Pods-yanxuan-frameworks.sh: Permission denied
+
+如果报以上错误，可删除 **Build Phases** 中 **Embed Pods Frameworks** 以及**Copy Pods Resources** 中的文件路径解决
 
