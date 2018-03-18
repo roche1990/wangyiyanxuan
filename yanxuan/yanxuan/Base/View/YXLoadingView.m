@@ -21,7 +21,6 @@
     if (self = [super initWithFrame:frame]) {
         
         _activityIndicatorView = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleGray];
-        _activityIndicatorView.center = CGPointMake(self.center.x, self.center.y);
         [_activityIndicatorView startAnimating];
         [self addSubview:_activityIndicatorView];
         self.backgroundColor = [UIColor whiteColor];
@@ -32,7 +31,8 @@
 
 +(instancetype)addToView:(UIView *)view{
     
-   YXLoadingView *loadView = [[YXLoadingView alloc] initWithFrame:[UIScreen mainScreen].bounds];
+   YXLoadingView *loadView = [[YXLoadingView alloc] initWithFrame:view.frame];
+    loadView.activityIndicatorView.center = view.center;
     [view addSubview:loadView];
     return loadView;
 }
@@ -52,6 +52,23 @@
             [loadingView removeFromSuperview];
         }
     }
+}
+
++(instancetype)getLoadViewForView:(UIView *)view{
+    
+    YXLoadingView *loadingView;
+    
+    NSEnumerator *subViews = [view.subviews reverseObjectEnumerator];
+    
+    for (UIView *subView in subViews) {
+        
+        if ([subView isKindOfClass:self]) {
+            
+            loadingView = (YXLoadingView *)subView;
+        }
+    }
+    
+    return loadingView;
 }
 
 @end

@@ -12,5 +12,5 @@
 
 +(instancetype)addToView:(UIView *)view;
 +(void)hiddenForView:(UIView *)view;
-
++(instancetype)getLoadViewForView:(UIView *)view;
 @end

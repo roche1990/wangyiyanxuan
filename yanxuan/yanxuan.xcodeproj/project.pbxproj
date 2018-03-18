@@ -423,7 +423,7 @@
 				C008CB8420454D9600DDA4C0 /* Base */,
 				C008CB55204532D400DDA4C0 /* Main */,
 				C008CB65204533BC00DDA4C0 /* Yanxuan */,
-				C008CC2820469CE600DDA4C0 /* Resource */,
+				C01BA9B4205E114B0062653A /* Resource */,
 				C008CB2920452E0D00DDA4C0 /* Assets.xcassets */,
 				C008CB2620452E0D00DDA4C0 /* Main.storyboard */,
 				C008CB2B20452E0D00DDA4C0 /* LaunchScreen.storyboard */,
@@ -454,9 +454,9 @@
 		C008CB55204532D400DDA4C0 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				C01BA9A5205E10FB0062653A /* View */,
 				C008CB56204532D400DDA4C0 /* Controller */,
 				C008CB59204532D400DDA4C0 /* Model */,
-				C008CB5C204532D400DDA4C0 /* View */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -477,13 +477,6 @@
 				C008CB5B204532D400DDA4C0 /* ListModel.m */,
 			);
 			path = Model;
-			sourceTree = "<group>";
-		};
-		C008CB5C204532D400DDA4C0 /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
 			sourceTree = "<group>";
 		};
 		C008CB65204533BC00DDA4C0 /* Yanxuan */ = {
@@ -592,8 +585,8 @@
 		C008CB8420454D9600DDA4C0 /* Base */ = {
 			isa = PBXGroup;
 			children = (
+				C01BA9A4205E10E80062653A /* Model */,
 				C008CB8520454D9600DDA4C0 /* Controller */,
-				C008CB8820454D9600DDA4C0 /* Model */,
 				C008CB8920454D9600DDA4C0 /* View */,
 			);
 			path = Base;
@@ -610,13 +603,6 @@
 				C008CB8F2045552C00DDA4C0 /* BaseTableViewCell.m */,
 			);
 			path = Controller;
-			sourceTree = "<group>";
-		};
-		C008CB8820454D9600DDA4C0 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
 			sourceTree = "<group>";
 		};
 		C008CB8920454D9600DDA4C0 /* View */ = {
@@ -705,13 +691,6 @@
 			path = Cell;
 			sourceTree = "<group>";
 		};
-		C008CC2820469CE600DDA4C0 /* Resource */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Resource;
-			sourceTree = "<group>";
-		};
 		C008CC2F20469D1A00DDA4C0 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
@@ -753,6 +732,27 @@
 				245B9723204C2A0000D8D949 /* HTSegmentsView */,
 			);
 			path = Vendor;
+			sourceTree = "<group>";
+		};
+		C01BA9A4205E10E80062653A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C01BA9A5205E10FB0062653A /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C01BA9B4205E114B0062653A /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resource;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

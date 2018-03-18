@@ -55,9 +55,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    [YXLoadingView addToView:[UIApplication sharedApplication].keyWindow];
+    
     [self settingBaseUrl];
     [self settingBaseInformation];
+    [self settingNavigationBar];
     [self loadData];
     [self settingScrollView];
     [self addAdjustView];
@@ -86,7 +87,7 @@
         weakself.hasReport = hasReportData;
         NSLog(@"hasReportData = %zd",hasReportData);
         
-        [weakself settingNavigationBar];
+        [weakself configNavigationBar];
         [weakself settingSubViewController];
     }];
 }
@@ -222,7 +223,7 @@
 -(void)settingNavigationBar{
     
     _goodsNavigationViewModel = [[YXGoodsNavigationViewModel alloc] init];
-    _goodsNavigationViewModel.hasReport = self.isHasReport;
+    
     LSWeakSelf(self);
     [_goodsNavigationViewModel setDidClickSegmentedControlBlock:^(NSUInteger idx) {
         
@@ -230,6 +231,11 @@
     }];
     
     [_goodsNavigationViewModel configNavigationWithViewController:self];
+}
+
+-(void)configNavigationBar{
+    
+    _goodsNavigationViewModel.hasReport = self.isHasReport;
 }
 
 -(void)settingGoodsBackToTopButton{

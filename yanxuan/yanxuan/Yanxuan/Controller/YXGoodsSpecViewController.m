@@ -45,7 +45,7 @@ static const float scrollDistance = 50;
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    
+    [YXLoadingView addToView:self.view];
     [self settingBaseInformation];
     [self loadData];
     [self settingTableView];
@@ -70,7 +70,6 @@ static const float scrollDistance = 50;
     
     [kNotificationCenter addObserver:self selector:@selector(GoodsSpecBackToTop) name:nYXGoodsBackToTop object:nil];
     
-    
 }
 
 -(void)settingTableView{
@@ -81,7 +80,7 @@ static const float scrollDistance = 50;
     _tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
     _tableView.backgroundColor = [UIColor whiteColor];
     _tableView.showsVerticalScrollIndicator = NO;
-    [self.view addSubview:_tableView];
+    [self.view insertSubview:_tableView belowSubview:[YXLoadingView getLoadViewForView:self.view]];
     //tag 10086 轮播图
     //tag 10087 规格选取
 }
@@ -108,7 +107,7 @@ static const float scrollDistance = 50;
         
         [weakself.tableView reloadData];
         weakself.loadDataFinishBlock();
-        [YXLoadingView hiddenForView:[UIApplication sharedApplication].keyWindow];
+        [YXLoadingView hiddenForView:weakself.view];
     }];
 }
 
