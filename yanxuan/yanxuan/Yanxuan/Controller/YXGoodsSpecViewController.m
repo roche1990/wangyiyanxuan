@@ -49,7 +49,7 @@ static const float scrollDistance = 50;
     [self settingBaseInformation];
     [self loadData];
     [self settingTableView];
-    [self setttingTablViewFooter];
+    [self setttingTableViewFooter];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -85,7 +85,7 @@ static const float scrollDistance = 50;
     //tag 10087 规格选取
 }
 
--(void)setttingTablViewFooter{
+-(void)setttingTableViewFooter{
     
     _tableView.tableFooterView = [[YXGoodsSpecDragToIntroductionView alloc] initWithFrame:CGRectMake(0, 0, kScreenWidth, 75)];
     _dragToIntroductionView = (YXGoodsSpecDragToIntroductionView *)_tableView.tableFooterView;

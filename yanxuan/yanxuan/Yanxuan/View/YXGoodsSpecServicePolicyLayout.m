@@ -52,7 +52,7 @@
 - (UICollectionViewLayoutAttributes *)layoutAttributesForItemAtIndexPath:(NSIndexPath *)indexPath
 {
     CGFloat x = self.sectionInset.left;
-    //如果有sectionheader需要加上sectionheader高度
+    
     CGFloat y = self.headerReferenceSize.height + self.sectionInset.top;
     //判断获得前一个cell的x和y
     NSInteger preRow = indexPath.row - 1;
@@ -74,11 +74,11 @@
     }
     
     if( x + currentWidth + self.minimumLineSpacing > self.collectionView.frame.size.width){
-        //超出范围，换行
+       
         x = self.sectionInset.left;
         y += _rowHeight + self.minimumLineSpacing;
     }
-    // 创建属性
+    
     UICollectionViewLayoutAttributes *attrs = [UICollectionViewLayoutAttributes layoutAttributesForCellWithIndexPath:indexPath];
     attrs.frame = CGRectMake(x, y, currentWidth, _rowHeight);
     _originXArray[indexPath.row] = @(x);
