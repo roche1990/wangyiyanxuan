@@ -143,7 +143,7 @@
     [[HttpRequest sharedInstance] POST:recommendationUrl parameters:parameter success:^(id response) {
         
         _goodsRecommendationDictionary = response;
-        NSLog(@"4");
+        NSLog(@"2");
         _loadFinishNum ++;
         [self loadDataFinishWithNumber:_loadFinishNum];
     } failure:^(NSError *error) {
