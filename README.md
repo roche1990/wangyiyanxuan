@@ -25,9 +25,9 @@
 
 ![screenshot](http://r.photo.store.qq.com/psb?/V12RuddS4X20zt/MTJIH.HE.ogrMbUvj.mBOKMBRuTYfyq2X8K7LeynTvs!/r/dAgBAAAAAAAA)  ![screenshot](http://r.photo.store.qq.com/psb?/V12RuddS4X20zt/YwrJv0fnN.Lk79Wejt9HhLt.ljL0FCOZ23VlvHkHxiU!/r/dGcBAAAAAAAA) ![screenshot](http://r.photo.store.qq.com/psb?/V12RuddS4X20zt/uuAPTFZshI8nw19rlGTrdr77CwuUWfG*ifEFz6eNloM!/r/dGgBAAAAAAAA)
 
-**动图链接：**`http://wx2.sinaimg.cn/large/64c125d7gy1fpgwgf58fcg20a00jnhe0.gif`
+**动图链接：**`https://github.com/hanson1024/wangyiyanxuan/blob/master/picture/2018-03-18%2013.17.34.gif`
 
-![screenshot](http://wx2.sinaimg.cn/large/64c125d7gy1fpgwgf58fcg20a00jnhe0.gif) 
+![screenshot](https://github.com/hanson1024/wangyiyanxuan/blob/master/picture/2018-03-18%2013.17.34.gif) 
 
 -------
 
