@@ -90,49 +90,62 @@
     _loadFinishNum = 0;
     _finishBlock = finishBlock;
     
-    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+    dispatch_semaphore_t semaphore = dispatch_semaphore_create(0);
+    
+    dispatch_group_t group = dispatch_group_create();
+    
+    dispatch_group_async(group, dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+        //请求1
+        [self loadDataWithId:goods_id];
         
-        NSString *urlString = [BASE_URL stringByAppendingFormat:@"/item/detail?id=%zd",goods_id];
+        dispatch_semaphore_signal(semaphore);
+    });
+    dispatch_group_async(group, dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+        //请求2
+        [self loadRcmdDataWithId:goods_id];
         
-        NSData *data= [NSData dataWithContentsOfURL:[NSURL URLWithString:urlString]];
+        dispatch_semaphore_signal(semaphore);
+    });
+    
+    dispatch_group_notify(group, dispatch_get_main_queue(), ^{
         
-        dispatch_async(dispatch_get_main_queue(), ^{
-            
-            NSError *error;
-            ONOXMLDocument *doc=[ONOXMLDocument HTMLDocumentWithData:data error:&error];
-            ONOXMLElement *postsParentElement= [doc firstChildWithXPath:@"/html/body"]; //寻找该 XPath 代表的 HTML 节点,
-            [postsParentElement.children enumerateObjectsUsingBlock:^(ONOXMLElement *element, NSUInteger idx, BOOL * _Nonnull stop) {
-                
-                if (idx == 27) {
-                    
-                    NSString *json = [[element stringValue] stringByReplacingOccurrencesOfString:@"var jsonData=" withString:@""];
-                    
-                    NSRange range = [json rangeOfString:@"policyList="];
-                    
-                    NSString *policyListJson = [json substringFromIndex:range.location+range.length];
-                    
-                    NSRange baoyouInfoRange = [policyListJson rangeOfString:@"baoyouInfo"];
-                    
-                    policyListJson = [policyListJson substringWithRange:NSMakeRange(0, baoyouInfoRange.location - 2)];
-                    
-                    json = [json substringWithRange:NSMakeRange(0, range.location - 2)];
-                    
-                    NSDictionary *result = [NSJSONSerialization JSONObjectWithData:[json dataUsingEncoding:NSUTF8StringEncoding] options:kNilOptions error:nil];
-                    
-                    NSArray *policyList = [NSJSONSerialization JSONObjectWithData:[policyListJson dataUsingEncoding:NSUTF8StringEncoding] options:NSJSONReadingAllowFragments error:nil];
-                    
-                    _goodsPolicyListDictionary = [NSDictionary dictionaryWithObject:policyList forKey:@"policyList"];
-                    
-                    _goodsSpecDictionary = result;
-                    _loadFinishNum ++;
-                    NSLog(@"1");
-                    [self loadDataFinishWithNumber:_loadFinishNum];
-                }
-            }];
-        });
+        dispatch_semaphore_wait(semaphore,DISPATCH_TIME_FOREVER);
+        
+        dispatch_semaphore_wait(semaphore,DISPATCH_TIME_FOREVER);
+        
+        //界面刷新
+        NSLog(@"任务均完成，刷新界面");
+        
+        [self loadDataFinish];
+    });
+    
+}
+
+-(void)loadDataWithId:(NSInteger)goods_id{
+    
+    dispatch_semaphore_t sema = dispatch_semaphore_create(0);
+        
+    NSString *urlString = [BASE_URL stringByAppendingFormat:@"/item/detail?id=%zd",goods_id];
+    
+    NSData *data= [NSData dataWithContentsOfURL:[NSURL URLWithString:urlString]];
+    
+    dispatch_async(dispatch_get_main_queue(), ^{
+        
+        [self handleJsonDataWithData:data];
+        
+        dispatch_semaphore_signal(sema);
+        
+        NSLog(@"loadDataWithId");
         
     });
     
+    dispatch_semaphore_wait(sema, DISPATCH_TIME_FOREVER);
+    
+}
+
+-(void)loadRcmdDataWithId:(NSInteger)goods_id{
+    
+    dispatch_semaphore_t sema = dispatch_semaphore_create(0);
     
     NSMutableDictionary *header = [NSMutableDictionary dictionary];
     NSString *recommendationUrl = [BASE_URL stringByAppendingFormat:@"/xhr/item/rcmd.json"];
@@ -143,18 +156,55 @@
     [[HttpRequest sharedInstance] POST:recommendationUrl parameters:parameter success:^(id response) {
         
         _goodsRecommendationDictionary = response;
-        NSLog(@"2");
-        _loadFinishNum ++;
-        [self loadDataFinishWithNumber:_loadFinishNum];
+        
+        NSLog(@"loadRcmdDataWithId");
+        
+        dispatch_semaphore_signal(sema);
+        
     } failure:^(NSError *error) {
         NSLog(@"error = %@",error);
+        
+        NSLog(@"loadRcmdDataWithId");
+        
+        dispatch_semaphore_signal(sema);
     }];
+    
+    dispatch_semaphore_wait(sema, DISPATCH_TIME_FOREVER);
+}
+
+-(void)handleJsonDataWithData:(NSData *)data {
+    
+    NSError *error;
+    
+    ONOXMLDocument *doc=[ONOXMLDocument HTMLDocumentWithData:data error:&error];
+    
+    ONOXMLElement *postsParentElement= [doc firstChildWithXPath:@"/html/body"]; //寻找该 XPath 代表的 HTML 节点,
+    
+    ONOXMLElement *element = [postsParentElement.children objectAtIndex:27];
+    
+    NSString *json = [[element stringValue] stringByReplacingOccurrencesOfString:@"var jsonData=" withString:@""];
+    
+    NSRange range = [json rangeOfString:@"policyList="];
+    
+    NSString *policyListJson = [json substringFromIndex:range.location+range.length];
+    
+    NSRange baoyouInfoRange = [policyListJson rangeOfString:@"baoyouInfo"];
+    
+    policyListJson = [policyListJson substringWithRange:NSMakeRange(0, baoyouInfoRange.location - 2)];
+    
+    json = [json substringWithRange:NSMakeRange(0, range.location - 2)];
+    
+    NSDictionary *result = [NSJSONSerialization JSONObjectWithData:[json dataUsingEncoding:NSUTF8StringEncoding] options:kNilOptions error:nil];
+    
+    NSArray *policyList = [NSJSONSerialization JSONObjectWithData:[policyListJson dataUsingEncoding:NSUTF8StringEncoding] options:NSJSONReadingAllowFragments error:nil];
+    
+    _goodsPolicyListDictionary = [NSDictionary dictionaryWithObject:policyList forKey:@"policyList"];
+    
+    _goodsSpecDictionary = result;
     
 }
 
--(void)loadDataFinishWithNumber:(NSInteger )finishedNum{
-    
-    if (finishedNum == 2) {
+-(void)loadDataFinish{
         
         NSLog(@"netload finish");
         
@@ -249,9 +299,7 @@
             !_finishBlock?:_finishBlock([dataSource copy]);
             
         });
-        
-        
-    }
+    
 }
 
 @end

@@ -14,6 +14,8 @@
 
 +(YXGoodsSpecServicePolicyModel *)handleWithDict:(NSDictionary *)result{
     
+    NSLog(@"handleWithDict NSThread = %@",[NSThread currentThread]);
+    
     YXGoodsSpecServicePolicyModel *model = [YXGoodsSpecServicePolicyModel new];
     [model.policyList removeAllObjects];
     NSArray *policyList = [NSObject getSafeArray:[result objectForKey:@"policyList"]];
