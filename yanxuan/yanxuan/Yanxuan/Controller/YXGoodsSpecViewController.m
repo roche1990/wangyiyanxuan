@@ -208,43 +208,34 @@ static const float scrollDistance = 50;
 
 -(void)scrollViewDidScroll:(UIScrollView *)scrollView{
     
-    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+    CGFloat offset = -scrollView.contentOffset.y;
+    
+    if (offset >= 0) {
         
         YXGoodsBannerScaleImageView *scaleImageView = [_tableView viewWithTag:10086];
         
-        dispatch_async(dispatch_get_main_queue(), ^{
-            
-            CGFloat offset = -scrollView.contentOffset.y;
-            
-            if (offset >= 0) {
-                
-                scaleImageView.frame = CGRectMake(-offset*0.5+scaleImageView.defaultX, -offset, kScreenWidth+offset, kScreenWidth+offset);
-            }
-            
-            CGFloat distance = scrollView.contentOffset.y+_tableView.bounds.size.height-scrollView.contentSize.height;
-            
-            if (distance>scrollDistance) {
-                
-                if (_dragToIntroductionView.isUp) {
-                    _dragToIntroductionView.up = NO;
-                }
-                
-            } else {
-                
-                if (!_dragToIntroductionView.isUp) {
-                    _dragToIntroductionView.up = YES;
-                }
-            }
-            
-            if (distance>0) {
-                
-                _dragToIntroductionView.offSet = distance;
-            }
-            
-        });
-    });
+        scaleImageView.frame = CGRectMake(-offset*0.5+scaleImageView.defaultX, -offset, kScreenWidth+offset, kScreenWidth+offset);
+    }
     
+    CGFloat distance = scrollView.contentOffset.y+_tableView.bounds.size.height-scrollView.contentSize.height;
     
+    if (distance>scrollDistance) {
+        
+        if (_dragToIntroductionView.isUp) {
+            _dragToIntroductionView.up = NO;
+        }
+        
+    } else {
+        
+        if (!_dragToIntroductionView.isUp) {
+            _dragToIntroductionView.up = YES;
+        }
+    }
+    
+    if (distance>0) {
+        
+        _dragToIntroductionView.offSet = distance;
+    }
     
 }
 
